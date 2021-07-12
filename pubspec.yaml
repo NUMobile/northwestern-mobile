@@ -23,15 +23,33 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  analyzer: ^1.7.1
+  intl: ^0.17.0
+  thindek_ui: 1.0.0
+  cupertino_icons: ^1.0.3
+  community_material_icon: ^5.9.55
+  webview_flutter: ^2.0.9
+  provider: ^5.0.0
+  auto_route: 2.2.0
+  shared_preferences: ^2.0.6
+  flutter_screenutil: ^5.0.0+2
+  flutter_easyrefresh: ^2.2.1
+  introduction_screen: ^2.1.0
+  share: ^2.0.4
+  flutter_html: ^2.1.0
+  flutter_parsed_text: ^2.2.1
+  extended_text: ^7.0.0
+  flutter_easyloading: ^3.0.0
+  flutter_webview_plugin: ^0.4.0 #web显示 考虑重新替换为webview 2021.5.21
+  advance_pdf_viewer: ^2.0.0
+  webfeed: ^0.7.0
 
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  auto_route_generator: 2.1.0
+  build_runner:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -43,6 +61,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

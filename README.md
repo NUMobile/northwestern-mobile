@@ -1,6 +1,6 @@
 # nu_mobile
 
-Northwestern Mobile
+Northwestern Mobile Application
 
 ## Getting Started
 
