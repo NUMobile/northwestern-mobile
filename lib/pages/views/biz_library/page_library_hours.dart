@@ -39,8 +39,6 @@ class _PageLibraryHoursState extends State<PageLibraryHours> {
   @override
   void initState() {
     super.initState();
-
-    flutterWebviewPlugin.evalJavascript("alert('Hi, I just executed')");
     flutterWebviewPlugin.onProgressChanged.listen((progress) {
       print(progress);
       setState(() {
@@ -73,29 +71,29 @@ class _PageLibraryHoursState extends State<PageLibraryHours> {
           ),
         ),
         actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.add,
-              color: NUColors.Purple80,
-            ),
-            onPressed: () {
-              flutterWebviewPlugin.evalJavascript(""
-                      "document.getElementsByTagName('header')[0].style.display = 'none';" +
-                  "document.getElementById('breadcrumbs',).style.display = 'none';" +
-                  "document.getElementById('page',).style.margin = '0';" +
-                  "document.getElementById('tab-header',).style.display = 'none';" +
-                  "document.getElementsByTagName('footer')[0].style.display = 'none';" +
-                  "document.getElementsByTagName('p')[0].style.display = 'none';");
-              // flutterWebviewPlugin.getCookies().then((m) {
-              //   setState(() {
-              //     var a =
-              //         '{org.apache.tapestry.locale: en,  _ga: GA1.2.1260991913.1626429751,  _gid: GA1.2.1970571527.1626429751,  nmstat: c60115b3-015c-3418-1605-21eddf788763}';
-              //     _history.add('cookies: $m');
-              //     print(_history.join('\n'));
-              //   });
-              // });
-            },
-          ),
+          // IconButton(
+          //   icon: const Icon(
+          //     Icons.add,
+          //     color: NUColors.Purple80,
+          //   ),
+          //   onPressed: () {
+          //     flutterWebviewPlugin.evalJavascript(""
+          //             "document.getElementsByTagName('header')[0].style.display = 'none';" +
+          //         "document.getElementById('breadcrumbs',).style.display = 'none';" +
+          //         "document.getElementById('page',).style.margin = '0';" +
+          //         "document.getElementById('tab-header',).style.display = 'none';" +
+          //         "document.getElementsByTagName('footer')[0].style.display = 'none';" +
+          //         "document.getElementsByTagName('p')[0].style.display = 'none';");
+          //     // flutterWebviewPlugin.getCookies().then((m) {
+          //     //   setState(() {
+          //     //     var a =
+          //     //         '{org.apache.tapestry.locale: en,  _ga: GA1.2.1260991913.1626429751,  _gid: GA1.2.1970571527.1626429751,  nmstat: c60115b3-015c-3418-1605-21eddf788763}';
+          //     //     _history.add('cookies: $m');
+          //     //     print(_history.join('\n'));
+          //     //   });
+          //     // });
+          //   },
+          // ),
         ],
         bottom: PreferredSize(
           child: _progressBar(lineProgress, context),
