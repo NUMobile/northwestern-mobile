@@ -76,7 +76,6 @@ Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
               children: <Widget>[
                 Container(
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Container(
@@ -103,13 +102,36 @@ Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
                         ),
                       ),
                       Container(
-                        width: MediaQuery.of(context).size.width * 0.65,
-                        margin: EdgeInsets.only(
-                          top: 10.sp,
-                        ),
-                        child: Text(
-                          AppDate.timeLineFormat(rssItemList[index].pubDate!).toString(),
-                          style: TextStyle(fontSize: 22.sp, color: Colors.black38),
+                        width: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(
+                                top: 10.sp,
+                              ),
+                              child: Text(
+                                AppDate.timeLineFormat(rssItemList[index].pubDate!).toString(),
+                                style: TextStyle(fontSize: 22.sp, color: Colors.black38),
+                              ),
+                            ),
+                            rssItemList[index].dc!.subject != null
+                                ? Container(
+                                    alignment: Alignment.topRight,
+                                    margin: EdgeInsets.only(
+                                      top: 10.sp,
+                                    ),
+                                    child: Text(
+                                      rssItemList[index].dc!.subject.toString(),
+                                      style: TextStyle(
+                                          fontSize: 22.sp,
+                                          color: Colors.teal,
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle: FontStyle.italic),
+                                    ),
+                                  )
+                                : Container(),
+                          ],
                         ),
                       ),
                     ],
