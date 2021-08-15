@@ -39,11 +39,13 @@ class _PageLibraryState extends State<PageLibrary> {
       ),
       body: ListView(
         children: [
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
-            child: Text(
-              "Building Maps",
-              style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.black),
+          GestureDetector(
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+              child: Text(
+                "Building Maps",
+                style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.black),
+              ),
             ),
           ),
           InkWell(
