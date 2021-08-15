@@ -131,3 +131,65 @@ class _PageWebPdfState extends State<PageWebPdf> {
     );
   }
 }
+
+// class PageWebPdf extends StatefulWidget {
+//   final String title;
+//   final String url;
+//
+//   PageWebPdf({
+//     required this.title,
+//     required this.url,
+//   });
+//   @override
+//   _PageWebPdfState createState() => new _PageWebPdfState();
+// }
+//
+// class _PageWebPdfState extends State<PageWebPdf> {
+//   final flutterWebviewPlugin = new FlutterWebviewPlugin();
+//
+//   late StreamSubscription _onDestroy;
+//   late StreamSubscription<String> _onUrlChanged;
+//   late StreamSubscription<WebViewStateChanged> _onStateChanged;
+//
+//   String? token;
+//
+//   @override
+//   void dispose() {
+//     // Every listener should be canceled, the same should be done with this stream.
+//     _onDestroy.cancel();
+//     _onUrlChanged.cancel();
+//     _onStateChanged.cancel();
+//     flutterWebviewPlugin.dispose();
+//     super.dispose();
+//   }
+//
+//   @override
+//   void initState() {
+//     super.initState();
+//
+//     flutterWebviewPlugin.close();
+//
+//     // Add a listener to on destroy WebView, so you can make came actions.
+//     _onDestroy = flutterWebviewPlugin.onDestroy.listen((_) {
+//       print("destroy");
+//     });
+//
+//     _onStateChanged = flutterWebviewPlugin.onStateChanged.listen((WebViewStateChanged state) {
+//       print("onStateChanged: ${state.type} ${state.url}");
+//     });
+//
+//     // Add a listener to on url changed
+//     );
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     String loginUrl = "https://canvas.northwestern.edu/";
+//
+//     return new WebviewScaffold(
+//         url: loginUrl,
+//         appBar: new AppBar(
+//           title: new Text("Login to someservise..."),
+//         ));
+//   }
+// }
