@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nu_mobile/router/router.gr.dart';
-import 'package:nu_mobile/utils/cache.dart';
 import 'package:nu_mobile/utils/colors.dart';
 import 'package:thindek_ui/thindek_ui.dart';
 
@@ -229,19 +228,11 @@ class _TabPageAccountState extends State<TabPageAccount> {
                 CupertinoIcons.hand_raised_fill,
               ),
               menuList(
-                'Get Cache',
-                () async {
-                  double value = await CacheManager.loadApplicationCache();
-                  String str = CacheManager.formatSize(value);
-                  print('获取app缓存: ' + str);
-                },
-                Icons.settings,
-              ),
-              menuList(
-                'Clear Cache',
+                'Settings',
                 () {
-                  CacheManager.clearApplicationCache();
-                  print('删除缓存');
+                  context.pushRoute(
+                    PageSettings(),
+                  );
                 },
                 Icons.settings,
               ),

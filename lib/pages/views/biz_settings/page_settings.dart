@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nu_mobile/utils/cache.dart';
 import 'package:nu_mobile/utils/colors.dart';
+import 'package:thindek_ui/thindek_ui.dart';
 
 class PageSettings extends StatefulWidget {
   @override
@@ -71,37 +73,51 @@ class _PageSettingsState extends State<PageSettings> {
                     //   ),
                     // );
                   },
-                  title: Text('关于模时'),
+                  title: Text('About'),
                   trailing: Icon(
                     Icons.arrow_forward_ios,
                     size: 30.sp,
                   ),
                 ),
+                // ListTile(
+                //   onTap: () {
+                //     // context.pushRoute(
+                //     //   PageWebView(
+                //     //     title: '用户协议',
+                //     //     url: "https://www.munshare.com/agreement",
+                //     //   ),
+                //     // );
+                //   },
+                //   title: Text('用户协议'),
+                //   trailing: Icon(
+                //     Icons.arrow_forward_ios,
+                //     size: 30.sp,
+                //   ),
+                // ),
+                // ListTile(
+                //   onTap: () {
+                //     // context.pushRoute(
+                //     //   PageWebView(
+                //     //     title: '隐私政策',
+                //     //     url: "https://www.munshare.com/privacy",
+                //     //   ),
+                //     // );
+                //   },
+                //   title: Text('隐私政策'),
+                //   trailing: Icon(
+                //     Icons.arrow_forward_ios,
+                //     size: 30.sp,
+                //   ),
+                // ),
                 ListTile(
-                  onTap: () {
-                    // context.pushRoute(
-                    //   PageWebView(
-                    //     title: '用户协议',
-                    //     url: "https://www.munshare.com/agreement",
-                    //   ),
-                    // );
+                  onTap: () async {
+                    double value = await CacheManager.loadApplicationCache();
+                    String str = CacheManager.formatSize(value);
+                    print('get app cache: ' + str);
+                    CacheManager.clearApplicationCache();
+                    tdkToastInfo(msg: str + ' cleared');
                   },
-                  title: Text('用户协议'),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    size: 30.sp,
-                  ),
-                ),
-                ListTile(
-                  onTap: () {
-                    // context.pushRoute(
-                    //   PageWebView(
-                    //     title: '隐私政策',
-                    //     url: "https://www.munshare.com/privacy",
-                    //   ),
-                    // );
-                  },
-                  title: Text('隐私政策'),
+                  title: Text('Clear Cache'),
                   trailing: Icon(
                     Icons.arrow_forward_ios,
                     size: 30.sp,
