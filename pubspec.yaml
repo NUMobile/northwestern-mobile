@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.13.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -28,9 +28,9 @@ dependencies:
   thindek_ui: 1.0.0
   cupertino_icons: ^1.0.3
   community_material_icon: ^5.9.55
-  webview_flutter: ^2.0.9
+  webview_flutter: ^2.0.10
   provider: ^5.0.0
-  auto_route: 2.2.0
+  auto_route: ^2.3.0
   shared_preferences: ^2.0.6
   flutter_screenutil: ^5.0.0+2
   flutter_easyrefresh: ^2.2.1
@@ -40,9 +40,11 @@ dependencies:
   flutter_parsed_text: ^2.2.1
   extended_text: ^7.0.0
   flutter_easyloading: ^3.0.0
-  flutter_webview_plugin: ^0.4.0 #web显示 考虑重新替换为webview 2021.5.21
   advance_pdf_viewer: ^2.0.0
   webfeed: ^0.7.0
+  flutter_launcher_icons: ^0.9.0
+  path_provider: ^2.0.2
+  flutter_native_splash: ^1.2.1
 
 
 dev_dependencies:
@@ -50,6 +52,17 @@ dev_dependencies:
     sdk: flutter
   auto_route_generator: 2.1.0
   build_runner:
+
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/nplus_e.png"
+
+flutter_native_splash:
+  background_image: "assets/images/nplus_bg.png"
+  image: "assets/images/nplus_tp.png"
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -62,7 +75,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
+    - assets/
     - assets/images/
+    - assets/PDF/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
