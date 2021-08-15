@@ -21,7 +21,7 @@ class _ViewDiscoverState extends State<ViewDiscover> {
         backgroundColor: Colors.white,
         elevation: 0,
         title: Text(
-          'Discover',
+          'News',
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 60.sp, color: NUColors.NUPurple),
         ),
         actions: [
@@ -82,13 +82,15 @@ void displayBottomSheet(BuildContext context) {
                                 Container(
                                   margin: EdgeInsets.only(top: 10.h, bottom: 10.h),
                                   child: Text(
-                                    "真诚的沟通，有价值的连接",
+                                    "Subscribed to Multiple News Feed",
                                     style: TextStyle(
                                         fontSize: 40.sp, fontWeight: FontWeight.bold, color: NUColors.NUPurple),
                                   ),
                                 ),
-                                DocTitle(text: '怎样参与圆桌讨论：'),
-                                DocSection(text: '在模时，我们希望真诚的沟通和分享可以拓宽视野，建立人脉。我们希望模时的社群氛围是尊重的，启发的，开放的。'),
+                                DocTitle(text: 'News Source：'),
+                                DocSection(
+                                    text:
+                                        'Kellogg Insight, Office for RESEARCH, The Daily Northwestern, Northwestern Pritzker School of Law News,  Feinberg School of Medicine\'s News Center    '),
                                 DocSection(text: '尊重：不同意见很正常，但是保持对他人的理解和尊重是互动的底线。我可以不同意你的观点，但我捍卫你说话的权力。请推己及人。'),
                                 DocSection(
                                     text:
@@ -127,7 +129,7 @@ void displayBottomSheet(BuildContext context) {
                       Container(
                         margin: EdgeInsets.only(top: 10.h, bottom: 10.h),
                         child: Text(
-                          '关闭',
+                          'Close',
                           style: TextStyle(fontSize: bodyF.sp),
                         ),
                       ),

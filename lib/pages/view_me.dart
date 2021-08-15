@@ -18,7 +18,7 @@ class _ViewMeState extends State<ViewMe> {
         titleSpacing: 0,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        toolbarHeight: MediaQuery.of(context).size.height * 0.06,
+        toolbarHeight: MediaQuery.of(context).size.height * 0.01,
       ),
       body: TabPageAccount(),
     );

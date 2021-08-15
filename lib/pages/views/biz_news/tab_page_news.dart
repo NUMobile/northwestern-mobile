@@ -11,31 +11,35 @@ class TabPageNews extends StatefulWidget {
   _TabPageNewsState createState() => _TabPageNewsState();
 }
 
-class _TabPageNewsState extends State<TabPageNews> {
+class _TabPageNewsState extends State<TabPageNews> with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
+
   final EasyRefreshController _controller = EasyRefreshController();
 
   @override
   Widget build(BuildContext context) {
     return Consumer<NewsModel>(builder: (context, model, child) {
-      return model.rssItemListMultiple != null
-          ? EasyRefresh(
-              enableControlFinishRefresh: true,
-              controller: _controller,
-              header: BallPulseHeader(color: NUColors.NUPurple),
-              onRefresh: () async {
-                await model.fetchMultipleNews();
-                _controller.finishRefresh();
-              },
-              child: ListView.separated(
-                separatorBuilder: (BuildContext context, int index) => Container(
-                  height: 15.sp,
-                ),
-                itemCount: model.rssItemListMultiple.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return nuNewsCard(index, context, model.rssItemListMultiple);
-                },
-              ))
-          : Center(child: Text('Loading...'));
+      return EasyRefresh(
+          enableControlFinishRefresh: true,
+          controller: _controller,
+          firstRefresh: true,
+          header: BallPulseHeader(color: NUColors.NUPurple),
+          onRefresh: () async {
+            await model.fetchMultipleNews();
+            _controller.finishRefresh();
+          },
+          child: model.rssItemListMultiple != null
+              ? ListView.separated(
+                  separatorBuilder: (BuildContext context, int index) => Container(
+                    height: 15.sp,
+                  ),
+                  itemCount: model.rssItemListMultiple.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return nuNewsCard(index, context, model.rssItemListMultiple);
+                  },
+                )
+              : Center(child: Text('Loading...')));
     });
   }
 }

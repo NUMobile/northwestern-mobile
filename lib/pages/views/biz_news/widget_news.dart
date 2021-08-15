@@ -31,7 +31,7 @@ Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
                         width: MediaQuery.of(context).size.width * 0.65,
                         child: Text(
                           rssItemList[index].title.toString(),
-                          maxLines: 2,
+                          maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: bodyF.sp, color: NUColors.Purple90),
                         ),

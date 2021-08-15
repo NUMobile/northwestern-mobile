@@ -1,4 +1,3 @@
-import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -10,9 +9,9 @@ import 'package:nu_mobile/utils/colors.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'view_activity.dart';
 import 'view_home.dart';
 import 'view_me.dart';
+import 'view_resources.dart';
 
 class ApplicationPage extends StatefulWidget {
   ApplicationPage({Key? key}) : super(key: key);
@@ -63,12 +62,12 @@ class _ApplicationPageState extends State<ApplicationPage> with SingleTickerProv
     ),
     new BottomNavigationBarItem(
       icon: Icon(
-        CommunityMaterialIcons.compass,
+        Icons.feed,
         color: Colors.black26,
         size: 70.sp,
       ),
       activeIcon: Icon(
-        CommunityMaterialIcons.compass,
+        Icons.feed,
         color: NUColors.Purple90,
         size: 70.sp,
       ),
@@ -77,12 +76,12 @@ class _ApplicationPageState extends State<ApplicationPage> with SingleTickerProv
     ),
     new BottomNavigationBarItem(
       icon: Icon(
-        Icons.notifications,
+        Icons.widgets_rounded,
         color: Colors.black26,
         size: 70.sp,
       ),
       activeIcon: Icon(
-        Icons.notifications,
+        Icons.widgets_rounded,
         color: NUColors.Purple90,
         size: 70.sp,
       ),
@@ -139,7 +138,7 @@ class _ApplicationPageState extends State<ApplicationPage> with SingleTickerProv
       children: <Widget>[
         ViewHome(),
         ViewDiscover(),
-        ViewActivity(),
+        ViewResources(),
         ViewMe(),
       ],
       controller: _pageController,
@@ -175,7 +174,9 @@ class _ApplicationPageState extends State<ApplicationPage> with SingleTickerProv
     return MultiProvider(
       providers: [
         ChangeNotifierProvider<NewsModel>(
-          create: (context) => NewsModel()..fetchNews(),
+          create: (context) => NewsModel()
+            ..fetchMultipleNews()
+            ..fetchNewsNow(),
         ),
       ],
       child: Scaffold(

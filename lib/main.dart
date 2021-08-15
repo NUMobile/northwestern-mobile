@@ -36,6 +36,7 @@ class MyApp extends StatelessWidget {
               builder: EasyLoading.init(),
               debugShowCheckedModeBanner: false,
               theme: ThemeData(
+                buttonColor: NUColors.NUPurple,
                 primaryIconTheme: IconThemeData(
                   color: NUColors.Purple80,
                 ),

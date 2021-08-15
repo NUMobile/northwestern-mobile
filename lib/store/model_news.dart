@@ -27,6 +27,11 @@ class NewsModel with ChangeNotifier {
     final client =
         IOClient(HttpClient()..badCertificateCallback = ((X509Certificate cert, String host, int port) => true));
 
+    // McCormick News feed
+    var responseMcCormick = await client.get(Uri.parse(EngineeringNews));
+    var rssFeedMcCormick = RssFeed.parse(responseMcCormick.body);
+    List<RssItem>? rssItemListMcCormick = rssFeedMcCormick.items;
+
     // Research News feed
     var responseResearch = await client.get(Uri.parse(ResearchNews));
     var rssFeedResearch = RssFeed.parse(responseResearch.body);
@@ -50,17 +55,18 @@ class NewsModel with ChangeNotifier {
     // Kellogg Insight feed
     var responseInsight = await client.get(Uri.parse(KSMInsight));
     var rssFeedInsight = RssFeed.parse(responseInsight.body);
-    List<RssItem>? rssItemListInsight = rssFeedInsight.items;
+    List<RssItem> rssItemListInsight = rssFeedInsight.items!;
 
-    rssItemListInsight!
+    rssItemListInsight
       ..addAll(rssItemListFeinberg!)
       ..addAll(rssItemListPritzker!)
       ..addAll(rssItemListDaily!)
       ..addAll(rssItemListResearch!)
+      ..addAll(rssItemListMcCormick!)
       ..sort((a, b) => b.pubDate!.compareTo(a.pubDate!));
 
     client.close();
-    this._rssItemListMultiple = rssItemListInsight!;
+    this._rssItemListMultiple = rssItemListInsight;
     notifyListeners();
   }
 }
@@ -71,3 +77,4 @@ const String MedicineNews = 'https://news.feinberg.northwestern.edu/feed/';
 const String LawNews = 'https://news.law.northwestern.edu/feed/';
 const String DailyNews = 'https://dailynorthwestern.com/feed/rss/';
 const String ResearchNews = 'https://www.research.northwestern.edu/feed/';
+const String EngineeringNews = 'https://mccormick.northwestern.edu/rss/mcc.xml';
