@@ -18,7 +18,7 @@ class _PageSettingsState extends State<PageSettings> {
         centerTitle: true,
         iconTheme: IconThemeData(color: NUColors.Purple90),
         title: Text(
-          '设置',
+          'Settings',
           style: TextStyle(color: NUColors.Purple90),
         ),
       ),
