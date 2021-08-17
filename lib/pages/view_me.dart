@@ -1,5 +1,11 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nu_mobile/pages/views/biz_account/tab_page_account.dart';
+import 'package:nu_mobile/router/router.gr.dart';
+import 'package:nu_mobile/utils/colors.dart';
+import 'package:nu_mobile/utils/values.dart';
 
 class ViewMe extends StatefulWidget {
   const ViewMe({Key? key}) : super(key: key);
@@ -9,18 +15,65 @@ class ViewMe extends StatefulWidget {
 }
 
 class _ViewMeState extends State<ViewMe> {
+  final TextEditingController _searchController = TextEditingController();
+  final FocusNode _searchFocus = FocusNode();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
         centerTitle: false,
         titleSpacing: 0,
-        backgroundColor: Colors.transparent,
+        backgroundColor: NUColors.NUPurple,
         elevation: 0,
-        toolbarHeight: MediaQuery.of(context).size.height * 0.01,
+        title: Container(
+          margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+          child: Container(
+            height: 100.sp,
+            child: CupertinoTextField(
+              focusNode: _searchFocus,
+              controller: _searchController,
+              decoration: BoxDecoration(
+                color: CupertinoDynamicColor.withBrightness(
+                  color: CupertinoColors.white,
+                  darkColor: CupertinoColors.black,
+                ),
+                borderRadius: BorderRadius.all(Radius.circular(50.sp)),
+              ),
+              cursorColor: NUColors.NUPurple,
+              cursorWidth: 3,
+              prefix: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 15.sp),
+                  child: Icon(
+                    Icons.search,
+                    size: 50.sp,
+                    color: NUColors.NUPurple,
+                  )),
+              placeholder: 'Search',
+              onSubmitted: (string) {
+                context.pushRoute(
+                  PageWebView(
+                      url: "https://search.northwestern.edu/#gsc.tab=0&gsc.q=" + string + "&gsc.sort=",
+                      title: string,
+                      description: 'Search Results',
+                      jscode: jscodeSearch),
+                );
+                _searchController.clear();
+              },
+            ),
+          ),
+        ),
+        toolbarHeight: MediaQuery.of(context).size.height * 0.1,
       ),
-      body: TabPageAccount(),
+      body: GestureDetector(
+          onVerticalDragCancel: () {
+            _searchFocus.unfocus();
+          },
+          onTap: () {
+            _searchFocus.unfocus();
+          },
+          child: TabPageAccount()),
     );
   }
 }

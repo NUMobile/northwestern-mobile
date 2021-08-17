@@ -20,39 +20,36 @@ class _TabPageResourcesState extends State<TabPageResources> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.white10,
       child: ListView(
         children: [
+          resourceTitle(context, 'Health Service'),
           Container(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                resourceTitle(context, 'Health Service'),
-                Container(
-                  height: MediaQuery.of(context).size.width * 0.2,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      resourceButton(context, 'Directory', 'Browse Offices', () {
-                        context.pushRoute(
-                          PageWebView(
-                            title: 'Browse Departments',
-                            url: "https://offices.northwestern.edu",
-                          ),
-                        );
-                      }),
-                      resourceButton(context, 'Library', 'Visit all Libraries', () {
-                        context.pushRoute(PageLibrary());
-                      }),
-                      resourceButton(context, 'Maps', 'Northwestern Maps', () {
-                        context.pushRoute(PageMap());
-                      }),
-                    ],
-                  ),
-                ),
-              ],
+            child: Container(
+              height: MediaQuery.of(context).size.width * 0.2,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  resourceButton(context, 'Directory', 'Browse Offices', () {
+                    context.pushRoute(
+                      PageWebView(
+                        title: 'Browse Departments',
+                        url: "https://offices.northwestern.edu",
+                      ),
+                    );
+                  }),
+                  resourceButton(context, 'Library', 'Visit all Libraries', () {
+                    context.pushRoute(PageLibrary());
+                  }),
+                  resourceButton(context, 'Maps', 'Northwestern Maps', () {
+                    context.pushRoute(PageMap());
+                  }),
+                ],
+              ),
             ),
           ),
           resourceCard(context, 'Breathe', scriptBreathe, 'assets/images/breathe-hero.jpg'),
+          resourceTitle(context, 'Athletics'),
         ],
       ),
     );
@@ -65,7 +62,7 @@ Widget resourceCard(BuildContext context, String title, String description, Stri
     padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
     decoration: BoxDecoration(
       borderRadius: TDKRadii.r10,
-      color: NUColors.Purple10,
+      color: Colors.white,
     ),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -107,7 +104,7 @@ Widget resourceButton(BuildContext context, String title, String description, dy
   return InkWell(
     onTap: route,
     child: Container(
-      decoration: BoxDecoration(color: NUColors.Purple10, borderRadius: BorderRadius.all(Radius.circular(10))),
+      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
       margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
       padding: EdgeInsets.all(MediaQuery.of(context).size.width * MARGIN_RATIO),
       child: Column(

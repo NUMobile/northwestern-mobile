@@ -37,23 +37,24 @@ class _ViewHomeState extends State<ViewHome> with AutomaticKeepAliveClientMixin 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          centerTitle: false,
-          titleSpacing: MediaQuery.of(context).size.width * 0.05,
-          backgroundColor: Colors.white,
-          elevation: 0,
-          title: Container(
-            height: MediaQuery.of(context).size.width * 0.07,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              image: DecorationImage(
-                alignment: AlignmentDirectional.centerStart,
-                fit: BoxFit.contain,
-                image: AssetImage(
-                  'assets/images/nulogo.png',
-                ),
+        centerTitle: false,
+        titleSpacing: MediaQuery.of(context).size.width * 0.05,
+        backgroundColor: Colors.white,
+        elevation: 0,
+        title: Container(
+          height: MediaQuery.of(context).size.width * 0.07,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            image: DecorationImage(
+              alignment: AlignmentDirectional.centerStart,
+              fit: BoxFit.contain,
+              image: AssetImage(
+                'assets/images/nulogo.png',
               ),
             ),
-          )),
+          ),
+        ),
+      ),
       body: TabPageNewsNow(),
     );
   }
