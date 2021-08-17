@@ -7,6 +7,12 @@ import 'package:nu_mobile/utils/colors.dart';
 import 'package:provider/provider.dart';
 
 class TabPageNews extends StatefulWidget {
+  final ScrollController controller;
+
+  TabPageNews({
+    required this.controller,
+  });
+
   @override
   _TabPageNewsState createState() => _TabPageNewsState();
 }
@@ -21,6 +27,7 @@ class _TabPageNewsState extends State<TabPageNews> with AutomaticKeepAliveClient
   Widget build(BuildContext context) {
     return Consumer<NewsModel>(builder: (context, model, child) {
       return EasyRefresh(
+          scrollController: widget.controller,
           enableControlFinishRefresh: true,
           controller: _controller,
           firstRefresh: true,

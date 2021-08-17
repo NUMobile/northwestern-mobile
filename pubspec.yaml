@@ -31,6 +31,7 @@ dependencies:
   webfeed: ^0.7.0
   flutter_launcher_icons: ^0.9.0
   path_provider: ^2.0.2
+  url_launcher: ^6.0.9
   flutter_native_splash: ^1.2.1
 
 

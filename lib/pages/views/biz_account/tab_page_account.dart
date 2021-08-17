@@ -7,6 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nu_mobile/router/router.gr.dart';
 import 'package:nu_mobile/utils/colors.dart';
 import 'package:thindek_ui/thindek_ui.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 const String jscodeSearch = "document.getElementsByTagName('header')[0].style.display = 'none';" +
     "document.getElementsByTagName('form')[0].style.display = 'none';" +
@@ -167,6 +168,18 @@ class _TabPageAccountState extends State<TabPageAccount> {
                         context.pushRoute(
                           PageWebBrowse(url: "https://nuprint.northwestern.edu/mr"),
                         );
+                      },
+                      Icons.print_rounded,
+                    ),
+                    menuList(
+                      'Canvas',
+                      () async {
+                        String _url = 'canvas-student://canvas.northwestern.edu';
+                        await canLaunch(_url)
+                            ? await launch(_url)
+                            : context.pushRoute(
+                                PageWebBrowse(url: "https://canvas.northwestern.edu/"),
+                              );
                       },
                       Icons.print_rounded,
                     ),

@@ -12,6 +12,36 @@ class ViewDiscover extends StatefulWidget {
 }
 
 class _ViewDiscoverState extends State<ViewDiscover> {
+  final ScrollController _scrollController = ScrollController();
+  bool showToTop = false;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _scrollController.addListener(() {
+      if (_scrollController.hasClients) {
+        var shouldScrollTop = false;
+        if (_scrollController.offset >= (150) && !_scrollController.position.outOfRange) {
+          shouldScrollTop = true;
+        }
+        setState(() {
+          showToTop = shouldScrollTop;
+        });
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _scrollController.dispose();
+  }
+
+  _jumpToTop() {
+    _scrollController.jumpTo(1);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +68,16 @@ class _ViewDiscoverState extends State<ViewDiscover> {
           ),
         ],
       ),
-      body: TabPageNews(),
+      body: TabPageNews(controller: _scrollController),
+      floatingActionButton: showToTop
+          ? FloatingActionButton(
+              backgroundColor: NUColors.NUPurple,
+              child: Icon(Icons.arrow_upward_outlined),
+              onPressed: () {
+                _jumpToTop();
+              },
+            )
+          : null,
     );
   }
 }

@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nu_mobile/router/router.gr.dart';
-import 'package:nu_mobile/utils/colors.dart';
 import 'package:thindek_ui/thindek_ui.dart';
 
 const String scriptBreathe =
@@ -20,7 +19,7 @@ class _TabPageResourcesState extends State<TabPageResources> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white10,
+      color: Colors.white,
       child: ListView(
         children: [
           resourceTitle(context, 'Health Service'),
@@ -63,13 +62,23 @@ Widget resourceCard(BuildContext context, String title, String description, Stri
     decoration: BoxDecoration(
       borderRadius: TDKRadii.r10,
       color: Colors.white,
+      image: DecorationImage(
+        fit: BoxFit.cover,
+        image: AssetImage(
+          'assets/images/purple-polygons.png',
+        ),
+      ),
     ),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           title,
-          style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: NUColors.NUPurple),
+          style: TextStyle(
+            fontSize: 40.sp,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
         ),
         Container(
           height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.3,
@@ -84,7 +93,12 @@ Widget resourceCard(BuildContext context, String title, String description, Stri
             ),
           ),
         ),
-        Text(description),
+        Text(
+          description,
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
       ],
     ),
   );
@@ -104,7 +118,16 @@ Widget resourceButton(BuildContext context, String title, String description, dy
   return InkWell(
     onTap: route,
     child: Container(
-      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage(
+            'assets/images/purple-polygons.png',
+          ),
+        ),
+        color: Colors.white,
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
       margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
       padding: EdgeInsets.all(MediaQuery.of(context).size.width * MARGIN_RATIO),
       child: Column(
@@ -114,13 +137,13 @@ Widget resourceButton(BuildContext context, String title, String description, dy
             title,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: NUColors.NUPurple),
+            style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.white),
           ),
           Text(
             description,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(fontSize: 20.sp, color: Colors.black),
+            style: TextStyle(fontSize: 20.sp, color: Colors.white),
           )
         ],
       ),

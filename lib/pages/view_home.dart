@@ -157,10 +157,8 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
                     }, Icons.sports_football),
                     homeButton(context, 'Dining', 'Places to Eat', () {
                       context.pushRoute(
-                        PageWebView(
-                          title: 'Browse Departments',
-                          url: "https://offices.northwestern.edu",
-                          jscode: jscodeDirectory,
+                        PageWebBrowse(
+                          url: "https://dineoncampus.com/northwestern",
                         ),
                       );
                     }, Icons.dining),
