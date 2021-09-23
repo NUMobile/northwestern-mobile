@@ -59,3 +59,10 @@ flutter:
     - assets/
     - assets/images/
     - assets/PDF/
+    - assets/PDF/tech/
+  fonts:
+    - family: iconfont
+      fonts:
+        - asset: assets/fonts/canvas.ttf
+
+

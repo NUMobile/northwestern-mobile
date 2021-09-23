@@ -6,6 +6,7 @@ import 'package:flutter_easyrefresh/easy_refresh.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nu_mobile/router/router.gr.dart';
 import 'package:nu_mobile/utils/colors.dart';
+import 'package:nu_mobile/utils/icons.dart';
 import 'package:thindek_ui/thindek_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -181,7 +182,7 @@ class _TabPageAccountState extends State<TabPageAccount> {
                                 PageWebBrowse(url: "https://canvas.northwestern.edu/"),
                               );
                       },
-                      Icons.print_rounded,
+                      IconFont.icon_Canvas,
                     ),
                     menuList(
                       'Recreation Membership',
@@ -214,12 +215,14 @@ class _TabPageAccountState extends State<TabPageAccount> {
                     ),
                     menuList(
                       'Social Media',
-                      () {
-                        context.pushRoute(
-                          PageWebBrowse(
-                              url:
-                                  "https://www.northwestern.edu/transportation-parking/shuttles/routes/intercampus.html"),
-                        );
+                      () async {
+                        const url = 'https://google.com';
+
+                        if (await canLaunch(url)) {
+                          await launch(url, forceWebView: true);
+                        } else {
+                          throw 'Could not launch $url';
+                        }
                       },
                       CupertinoIcons.chart_bar_circle_fill,
                     ),
