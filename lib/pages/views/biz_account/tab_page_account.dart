@@ -11,7 +11,6 @@ import 'package:thindek_ui/thindek_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 const String jscodeSearch = "document.getElementsByTagName('header')[0].style.display = 'none';" +
-    "document.getElementsByTagName('form')[0].style.display = 'none';" +
     "document.getElementsByTagName('footer')[0].style.display = 'none';";
 
 class TabPageAccount extends StatefulWidget {
@@ -24,7 +23,7 @@ class _TabPageAccountState extends State<TabPageAccount> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.black12,
+        color: CupertinoColors.systemGroupedBackground,
         child: GestureDetector(
           child: ListView(
             children: [
@@ -141,19 +140,19 @@ class _TabPageAccountState extends State<TabPageAccount> {
                 decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Column(
                   children: [
-                    menuList(
-                      'My Wildcard',
-                      () {
-                        // context.pushRoute(
-                        //   PageQrcodeUser(
-                        //     avatar: model.meInfo['avatar'],
-                        //     userName: model.meInfo['name_zh'],
-                        //     userId: model.meInfo.objectId,
-                        //   ),
-                        // );
-                      },
-                      Icons.qr_code,
-                    ),
+                    // menuList(
+                    //   'My Wildcard',
+                    //   () {
+                    //     // context.pushRoute(
+                    //     //   PageQrcodeUser(
+                    //     //     avatar: model.meInfo['avatar'],
+                    //     //     userName: model.meInfo['name_zh'],
+                    //     //     userId: model.meInfo.objectId,
+                    //     //   ),
+                    //     // );
+                    //   },
+                    //   Icons.qr_code,
+                    // ),
                     menuList(
                       'Academic Calendar',
                       () {
@@ -213,19 +212,28 @@ class _TabPageAccountState extends State<TabPageAccount> {
                       },
                       Icons.bus_alert,
                     ),
-                    menuList(
-                      'Social Media',
-                      () async {
-                        const url = 'https://google.com';
-
-                        if (await canLaunch(url)) {
-                          await launch(url, forceWebView: true);
-                        } else {
-                          throw 'Could not launch $url';
-                        }
-                      },
-                      CupertinoIcons.chart_bar_circle_fill,
-                    ),
+                    // menuList(
+                    //   'Download Apps',
+                    //   () {
+                    //     context.pushRoute(
+                    //       PageApps(),
+                    //     );
+                    //   },
+                    //   Icons.get_app_rounded,
+                    // ),
+                    // menuList(
+                    //   'Social Media',
+                    //   () async {
+                    //     const url = 'https://google.com';
+                    //
+                    //     if (await canLaunch(url)) {
+                    //       await launch(url, forceWebView: true);
+                    //     } else {
+                    //       throw 'Could not launch $url';
+                    //     }
+                    //   },
+                    //   CupertinoIcons.chart_bar_circle_fill,
+                    // ),
                     menuList(
                       'Share a Concern',
                       () {

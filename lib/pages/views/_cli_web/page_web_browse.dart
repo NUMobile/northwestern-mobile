@@ -9,10 +9,7 @@ class PageWebBrowse extends StatefulWidget {
   final String url;
   final String? jscode;
 
-  PageWebBrowse({
-    required this.url,
-    this.jscode
-  });
+  PageWebBrowse({required this.url, this.jscode});
 
   @override
   _PageWebBrowseState createState() => _PageWebBrowseState();
@@ -38,6 +35,7 @@ class _PageWebBrowseState extends State<PageWebBrowse> {
           javascriptMode: JavascriptMode.unrestricted,
           onWebViewCreated: (WebViewController webViewController) {
             _controller.complete(webViewController);
+            _webViewController = webViewController;
           },
           onProgress: (int progress) {
             double doubleProgress = progress / 100;

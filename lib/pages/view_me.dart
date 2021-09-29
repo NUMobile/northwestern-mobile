@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nu_mobile/pages/views/biz_account/tab_page_account.dart';
 import 'package:nu_mobile/router/router.gr.dart';
 import 'package:nu_mobile/utils/colors.dart';
-import 'package:nu_mobile/utils/values.dart';
+import 'package:thindek_ui/thindek_ui.dart';
 
 class ViewMe extends StatefulWidget {
   const ViewMe({Key? key}) : super(key: key);
@@ -50,15 +50,22 @@ class _ViewMeState extends State<ViewMe> {
                     size: 50.sp,
                     color: NUColors.NUPurple,
                   )),
-              placeholder: 'Search',
-              onSubmitted: (string) {
-                context.pushRoute(
-                  PageWebView(
-                      url: "https://search.northwestern.edu/#gsc.tab=0&gsc.q=" + string + "&gsc.sort=",
-                      title: string,
-                      description: 'Search Results',
-                      jscode: jscodeSearch),
-                );
+              placeholder: 'Search in Northwestern',
+              onSubmitted: (searchText) {
+                searchText.trim() != ''
+                    ? context.pushRoute(
+                        PageWebBrowse(
+                            url: Uri.encodeFull(
+                                "https://search.northwestern.edu/#gsc.tab=0&gsc.q=" + searchText + "&gsc.sort="),
+                            jscode: jscodeSearch),
+                      )
+                    : context.pushRoute(
+                        PageWebView(
+                            url: "https://northwestern.edu",
+                            title: 'Northwestern University',
+                            description: 'Homepage',
+                            jscode: jscodeSearch),
+                      );
                 _searchController.clear();
               },
             ),

@@ -9,16 +9,18 @@ import 'package:flutter/material.dart' as _i2;
 
 import '../pages/application.dart' as _i3;
 import '../pages/introduction.dart' as _i4;
-import '../pages/views/basic_web/page_web_browse.dart' as _i6;
-import '../pages/views/basic_web/page_web_pdf.dart' as _i7;
-import '../pages/views/basic_web/page_web_view.dart' as _i5;
-import '../pages/views/biz_library/page_library.dart' as _i8;
-import '../pages/views/biz_library/page_library_map_list.dart' as _i9;
-import '../pages/views/biz_map/page_map.dart' as _i10;
-import '../pages/views/biz_map/page_map_pdf.dart' as _i11;
-import '../pages/views/biz_parking/page_parking.dart' as _i13;
-import '../pages/views/biz_settings/page_settings.dart' as _i14;
-import '../pages/views/biz_shuttles/page_shuttles.dart' as _i12;
+import '../pages/views/_cli_settings/page_settings.dart' as _i5;
+import '../pages/views/_cli_web/page_web_browse.dart' as _i7;
+import '../pages/views/_cli_web/page_web_pdf.dart' as _i8;
+import '../pages/views/_cli_web/page_web_view.dart' as _i6;
+import '../pages/views/biz_account/page_apps.dart' as _i9;
+import '../pages/views/biz_library/page_library.dart' as _i10;
+import '../pages/views/biz_library/page_library_map_list.dart' as _i11;
+import '../pages/views/biz_map/page_map.dart' as _i12;
+import '../pages/views/biz_map/page_map_pdf.dart' as _i13;
+import '../pages/views/biz_map/page_map_tech.dart' as _i14;
+import '../pages/views/biz_parking/page_parking.dart' as _i16;
+import '../pages/views/biz_shuttles/page_shuttles.dart' as _i15;
 
 class AppRouter extends _i1.RootStackRouter {
   AppRouter([_i2.GlobalKey<_i2.NavigatorState>? navigatorKey])
@@ -39,11 +41,16 @@ class AppRouter extends _i1.RootStackRouter {
           return _i4.IntroductionPage();
         },
         fullscreenDialog: true),
+    PageSettings.name: (routeData) => _i1.MaterialPageX<dynamic>(
+        routeData: routeData,
+        builder: (_) {
+          return _i5.PageSettings();
+        }),
     PageWebView.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (data) {
           final args = data.argsAs<PageWebViewArgs>();
-          return _i5.PageWebView(
+          return _i6.PageWebView(
               url: args.url,
               title: args.title,
               description: args.description,
@@ -53,50 +60,55 @@ class AppRouter extends _i1.RootStackRouter {
         routeData: routeData,
         builder: (data) {
           final args = data.argsAs<PageWebBrowseArgs>();
-          return _i6.PageWebBrowse(url: args.url, jscode: args.jscode);
+          return _i7.PageWebBrowse(url: args.url, jscode: args.jscode);
         },
         fullscreenDialog: true),
     PageWebPdf.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (data) {
           final args = data.argsAs<PageWebPdfArgs>();
-          return _i7.PageWebPdf(title: args.title, url: args.url);
+          return _i8.PageWebPdf(title: args.title, url: args.url);
+        }),
+    PageApps.name: (routeData) => _i1.MaterialPageX<dynamic>(
+        routeData: routeData,
+        builder: (_) {
+          return const _i9.PageApps();
         }),
     PageLibrary.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i8.PageLibrary();
+          return const _i10.PageLibrary();
         }),
     PageLibraryMapList.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i9.PageLibraryMapList();
+          return const _i11.PageLibraryMapList();
         }),
     PageMap.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i10.PageMap();
+          return const _i12.PageMap();
         }),
     PageMapPdf.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (data) {
           final args = data.argsAs<PageMapPdfArgs>();
-          return _i11.PageMapPdf(title: args.title, path: args.path);
+          return _i13.PageMapPdf(title: args.title, path: args.path);
+        }),
+    PageMapTech.name: (routeData) => _i1.MaterialPageX<dynamic>(
+        routeData: routeData,
+        builder: (_) {
+          return _i14.PageMapTech();
         }),
     PageShuttles.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i12.PageShuttles();
+          return const _i15.PageShuttles();
         }),
     PageParking.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i13.PageParking();
-        }),
-    PageSettings.name: (routeData) => _i1.MaterialPageX<dynamic>(
-        routeData: routeData,
-        builder: (_) {
-          return _i14.PageSettings();
+          return const _i16.PageParking();
         })
   };
 
@@ -104,17 +116,19 @@ class AppRouter extends _i1.RootStackRouter {
   List<_i1.RouteConfig> get routes => [
         _i1.RouteConfig(ApplicationPage.name, path: '/'),
         _i1.RouteConfig(IntroductionPage.name, path: '/introduction-page'),
+        _i1.RouteConfig(PageSettings.name, path: '/page-settings'),
         _i1.RouteConfig(PageWebView.name, path: '/page-web-view'),
         _i1.RouteConfig(PageWebBrowse.name, path: '/page-web-browse'),
         _i1.RouteConfig(PageWebPdf.name, path: '/page-web-pdf'),
+        _i1.RouteConfig(PageApps.name, path: '/page-apps'),
         _i1.RouteConfig(PageLibrary.name, path: '/page-library'),
         _i1.RouteConfig(PageLibraryMapList.name,
             path: '/page-library-map-list'),
         _i1.RouteConfig(PageMap.name, path: '/page-map'),
         _i1.RouteConfig(PageMapPdf.name, path: '/page-map-pdf'),
+        _i1.RouteConfig(PageMapTech.name, path: '/page-map-tech'),
         _i1.RouteConfig(PageShuttles.name, path: '/page-shuttles'),
-        _i1.RouteConfig(PageParking.name, path: '/page-parking'),
-        _i1.RouteConfig(PageSettings.name, path: '/page-settings')
+        _i1.RouteConfig(PageParking.name, path: '/page-parking')
       ];
 }
 
@@ -135,6 +149,12 @@ class IntroductionPage extends _i1.PageRouteInfo {
   const IntroductionPage() : super(name, path: '/introduction-page');
 
   static const String name = 'IntroductionPage';
+}
+
+class PageSettings extends _i1.PageRouteInfo {
+  const PageSettings() : super(name, path: '/page-settings');
+
+  static const String name = 'PageSettings';
 }
 
 class PageWebView extends _i1.PageRouteInfo<PageWebViewArgs> {
@@ -201,6 +221,12 @@ class PageWebPdfArgs {
   final String url;
 }
 
+class PageApps extends _i1.PageRouteInfo {
+  const PageApps() : super(name, path: '/page-apps');
+
+  static const String name = 'PageApps';
+}
+
 class PageLibrary extends _i1.PageRouteInfo {
   const PageLibrary() : super(name, path: '/page-library');
 
@@ -236,6 +262,12 @@ class PageMapPdfArgs {
   final String path;
 }
 
+class PageMapTech extends _i1.PageRouteInfo {
+  const PageMapTech() : super(name, path: '/page-map-tech');
+
+  static const String name = 'PageMapTech';
+}
+
 class PageShuttles extends _i1.PageRouteInfo {
   const PageShuttles() : super(name, path: '/page-shuttles');
 
@@ -246,10 +278,4 @@ class PageParking extends _i1.PageRouteInfo {
   const PageParking() : super(name, path: '/page-parking');
 
   static const String name = 'PageParking';
-}
-
-class PageSettings extends _i1.PageRouteInfo {
-  const PageSettings() : super(name, path: '/page-settings');
-
-  static const String name = 'PageSettings';
 }

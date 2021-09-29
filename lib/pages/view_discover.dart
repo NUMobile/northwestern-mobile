@@ -39,7 +39,8 @@ class _ViewDiscoverState extends State<ViewDiscover> {
   }
 
   _jumpToTop() {
-    _scrollController.jumpTo(1);
+    _scrollController.animateTo(0.0, duration: Duration(milliseconds: 500), curve: Curves.decelerate);
+    // _scrollController.jumpTo(1);
   }
 
   @override
@@ -71,8 +72,12 @@ class _ViewDiscoverState extends State<ViewDiscover> {
       body: TabPageNews(controller: _scrollController),
       floatingActionButton: showToTop
           ? FloatingActionButton(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
               backgroundColor: NUColors.NUPurple,
-              child: Icon(Icons.arrow_upward_outlined),
+              child: Icon(
+                Icons.keyboard_arrow_up,
+                size: 40,
+              ),
               onPressed: () {
                 _jumpToTop();
               },
@@ -130,21 +135,6 @@ void displayBottomSheet(BuildContext context) {
                                 DocSection(
                                     text:
                                         'Kellogg Insight, Office for RESEARCH, The Daily Northwestern, Northwestern Pritzker School of Law News,  Feinberg School of Medicine\'s News Center    '),
-                                DocSection(text: '尊重：不同意见很正常，但是保持对他人的理解和尊重是互动的底线。我可以不同意你的观点，但我捍卫你说话的权力。请推己及人。'),
-                                DocSection(
-                                    text:
-                                        '启发：我们希望圆桌讨论的话题是高质量，不要求有教育意义，至少应当对发现这个世界的奇妙之处有所帮助。如果有对某位模联人的意见需要发泄，请移步他处，模时将对这样的内容进行清除。'),
-                                DocSection(
-                                    text: '开放：我们欢迎多元的声音，他山之石，不同的经历和经验的碰撞会有更奇妙的反应。开放的学习态度也是必须。在模时，没有萌新和大佬，我们欢迎平等的对话。'),
-                                DocTitle(text: '圆桌如何运行？'),
-                                DocSection(text: '1. 你可以主持一个圆桌，发表感兴趣的议题。我们建议你可以先抛砖引玉，再邀请其他人来参与讨论互动。'),
-                                DocSection(text: '2. 寻找你感兴趣的圆桌议题加入，发表你的看法。'),
-                                DocTitle(text: '社区规范'),
-                                DocSection(
-                                  text: '1. 请你尊重国家相关法律法规，对讨论内容的底线进行评估。',
-                                ),
-                                DocSection(text: '2. 对人身攻击，没有理由的揣测，模时将予以删除'),
-                                DocSection(text: '模时圆桌需要每一位的用心运营，和我们一同构建真诚的沟通和有价值的连接。'),
                               ],
                             ),
                           ),
