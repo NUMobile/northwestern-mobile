@@ -35,14 +35,109 @@ class _PageShuttlesState extends State<PageShuttles> {
         color: Colors.white,
         child: ListView(
           children: [
+            libraryTitle(context, 'NU Shuttle Tracker'),
+            ListTile(
+              leading: Icon(
+                Icons.bus_alert,
+                color: Colors.red,
+                size: 30,
+              ),
+              onTap: () {
+                context.pushRoute(
+                  PageShuttlesIC(),
+                );
+              },
+              title: Text(
+                'IC: Intercampus',
+                style: TextStyle(
+                  fontSize: 35.sp,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              trailing: Icon(
+                Icons.arrow_forward_ios,
+                size: 30.sp,
+              ),
+            ),
+            tdkDivider(context),
+            ListTile(
+              leading: Icon(
+                Icons.bus_alert,
+                color: NUColors.Purple90,
+                size: 30,
+              ),
+              onTap: () {
+                context.pushRoute(
+                  PageShuttlesEL(),
+                );
+              },
+              title: Text(
+                'EL: Evanston Loop',
+                style: TextStyle(
+                  fontSize: 35.sp,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              trailing: Icon(
+                Icons.arrow_forward_ios,
+                size: 30.sp,
+              ),
+            ),
+            tdkDivider(context),
+            ListTile(
+              leading: Icon(
+                Icons.bus_alert,
+                color: Colors.green,
+                size: 30,
+              ),
+              onTap: () {
+                context.pushRoute(
+                  PageShuttlesCL(),
+                );
+              },
+              title: Text(
+                'CL: Campus Loop',
+                style: TextStyle(
+                  fontSize: 35.sp,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              trailing: Icon(
+                Icons.arrow_forward_ios,
+                size: 30.sp,
+              ),
+            ),
+            tdkDivider(context),
+            ListTile(
+              leading: Icon(
+                Icons.apps_rounded,
+                color: Colors.blueGrey,
+                size: 30,
+              ),
+              onTap: () {
+                context.pushRoute(
+                  PageWebBrowse(url: "https://northwestern.transloc.com/m/"),
+                );
+              },
+              title: Text(
+                'More Shuttles Info >',
+                style: TextStyle(
+                  fontSize: 35.sp,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
             libraryTitle(context, 'Route Maps'),
             libraryImage(context, 'assets/images/shuttle1440.jpg'),
             InkWell(
-              onTap: () =>
-                  context.pushRoute(PageMapPdf(title: 'Evanston Campus', path: 'assets/PDF/shuttle-overview.pdf')),
+              onTap: () => context.pushRoute(PageMapPdf(
+                  title: 'Evanston Campus',
+                  path: 'assets/PDF/shuttle-overview.pdf')),
               child: Container(
-                margin:
-                    EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO,
+                    vertical: 15.sp),
                 child: Text(
                   "Northwestern Shuttles 2020-2021 >",
                   style: TextStyle(
@@ -55,79 +150,27 @@ class _PageShuttlesState extends State<PageShuttles> {
             ),
             libraryDescription(
                 'Northwestern University operates several shuttles for students, faculty, and staff on the Evanston and Chicago campuses. '),
-            levelMap(context, 'Intercampus >', () {
+            routeMap(context, 'Intercampus >', () {
               context.pushRoute(PageWebView(
                 title: 'Intercampus',
-                url: 'https://www.google.com/maps/d/u/0/viewer?mid=1MkGRPsCy0e7vWkyu_WIWChAepU8',
+                url:
+                    'https://www.google.com/maps/d/u/0/viewer?mid=1MkGRPsCy0e7vWkyu_WIWChAepU8',
               ));
-            }),
-            levelMap(context, 'Evanston Loop >', () {
+            }, Colors.red),
+            routeMap(context, 'Evanston Loop >', () {
               context.pushRoute(PageWebView(
                 title: 'Evanston Loop',
                 url:
                     'https://www.google.com/maps/d/u/0/viewer?mid=1Vb6-WLFdIrBg1u2Nqd1kByCeVbU&ll=42.05271836553796%2C-87.6806563&z=15',
               ));
-            }),
-            levelMap(context, 'Campus Loop >', () {
+            }, NUColors.NUPurple),
+            routeMap(context, 'Campus Loop >', () {
               context.pushRoute(PageWebView(
                 title: 'Campus Loop',
                 url:
                     'https://www.google.com/maps/d/u/0/viewer?mid=1eloZBnx13Ix-B9WyMSqqevospJc&ll=42.05373021645418%2C-87.67500742900472&z=14',
               ));
-            }),
-            Container(
-              height: 30.sp,
-            ),
-            InkWell(
-              onTap: () {
-                context.pushRoute(
-                  PageWebBrowse(url: "https://northwestern.transloc.com"),
-                );
-              },
-              child: Container(
-                margin:
-                    EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
-                height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.2,
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Container(
-                      height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.2,
-                      decoration: BoxDecoration(
-                        borderRadius: TDKRadii.r10,
-                        color: Colors.white,
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: AssetImage(
-                            'assets/images/chicago-hero.jpg',
-                          ),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.2,
-                      decoration: BoxDecoration(
-                        borderRadius: TDKRadii.r10,
-                        color: Color(0xbc4e2a84),
-                      ),
-                    ),
-                    Container(
-                      height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.2,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Shuttle Tracker >',
-                            style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.white),
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
-                ),
-              ),
-            ),
+            }, Colors.green),
           ],
         ),
       ),
@@ -136,10 +179,13 @@ class _PageShuttlesState extends State<PageShuttles> {
 
   Widget libraryImage(BuildContext context, String path) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+      margin: EdgeInsets.symmetric(
+          horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO,
+          vertical: 15.sp),
       height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
       child: Container(
-        height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
+        height:
+            MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
         decoration: BoxDecoration(
           borderRadius: TDKRadii.r10,
           color: Colors.white,
@@ -156,29 +202,38 @@ class _PageShuttlesState extends State<PageShuttles> {
 
   Widget libraryDescription(String description) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+      margin: EdgeInsets.symmetric(
+          horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO,
+          vertical: 15.sp),
       child: Text(description),
     );
   }
 
   Container libraryTitle(BuildContext context, String title) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 30.sp),
+      margin: EdgeInsets.symmetric(
+          horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO,
+          vertical: 30.sp),
       child: Text(
         title,
-        style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.black),
+        style: TextStyle(
+            fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.black),
       ),
     );
   }
 
-  Widget levelMap(BuildContext context, String level, dynamic route) {
+  Widget routeMap(
+      BuildContext context, String level, dynamic route, Color color) {
     return InkWell(
       onTap: route,
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+        margin: EdgeInsets.symmetric(
+            horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO,
+            vertical: 15.sp),
         child: Text(
           level,
-          style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.w600, color: NUColors.NUPurple),
+          style: TextStyle(
+              fontSize: 40.sp, fontWeight: FontWeight.w600, color: color),
         ),
       ),
     );
