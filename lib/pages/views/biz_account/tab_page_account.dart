@@ -10,8 +10,9 @@ import 'package:nu_mobile/utils/icons.dart';
 import 'package:thindek_ui/thindek_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-const String jscodeSearch = "document.getElementsByTagName('header')[0].style.display = 'none';" +
-    "document.getElementsByTagName('footer')[0].style.display = 'none';";
+const String jscodeSearch =
+    "document.getElementsByTagName('header')[0].style.display = 'none';" +
+        "document.getElementsByTagName('footer')[0].style.display = 'none';";
 
 class TabPageAccount extends StatefulWidget {
   @override
@@ -136,8 +137,12 @@ class _TabPageAccountState extends State<TabPageAccount> {
                 height: 15.sp * 2,
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Column(
                   children: [
                     // menuList(
@@ -154,40 +159,56 @@ class _TabPageAccountState extends State<TabPageAccount> {
                     //   Icons.qr_code,
                     // ),
                     menuList(
+                      'CAESAR (NetID)',
+                      () {
+                        context.pushRoute(
+                          PageWebBrowse(
+                              url: "https://caesar.ent.northwestern.edu/"),
+                        );
+                      },
+                      Icons.assignment_rounded,
+                    ),
+                    menuList(
                       'Academic Calendar',
                       () {
                         context.pushRoute(
-                          PageWebBrowse(url: "https://planitpurple.northwestern.edu/calendar/academic_calendar/"),
+                          PageWebBrowse(
+                              url:
+                                  "https://planitpurple.northwestern.edu/calendar/academic_calendar/"),
                         );
                       },
                       CommunityMaterialIcons.calendar_clock,
                     ),
                     menuList(
-                      'Printing',
-                      () {
-                        context.pushRoute(
-                          PageWebBrowse(url: "https://nuprint.northwestern.edu/mr"),
-                        );
-                      },
-                      Icons.print_rounded,
-                    ),
-                    menuList(
                       'Canvas',
                       () async {
-                        String _url = 'canvas-student://canvas.northwestern.edu';
+                        String _url =
+                            'canvas-student://canvas.northwestern.edu';
                         await canLaunch(_url)
                             ? await launch(_url)
                             : context.pushRoute(
-                                PageWebBrowse(url: "https://canvas.northwestern.edu/"),
+                                PageWebBrowse(
+                                    url: "https://canvas.northwestern.edu/"),
                               );
                       },
                       IconFont.icon_Canvas,
                     ),
                     menuList(
+                      'Printing',
+                      () {
+                        context.pushRoute(
+                          PageWebBrowse(
+                              url: "https://nuprint.northwestern.edu/mr"),
+                        );
+                      },
+                      Icons.print_rounded,
+                    ),
+                    menuList(
                       'Recreation Membership',
                       () {
                         context.pushRoute(
-                          PageWebBrowse(url: "https://recreation.northwestern.edu/"),
+                          PageWebBrowse(
+                              url: "https://recreation.northwestern.edu/"),
                         );
                       },
                       Icons.sports_handball,
@@ -199,19 +220,14 @@ class _TabPageAccountState extends State<TabPageAccount> {
                 height: 15.sp * 2,
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: Column(
                   children: [
-                    menuList(
-                      'Shuttle Tracker(TransLoc)',
-                      () {
-                        context.pushRoute(
-                          PageWebBrowse(url: "https://northwestern.transloc.com"),
-                        );
-                      },
-                      Icons.bus_alert,
-                    ),
                     // menuList(
                     //   'Download Apps',
                     //   () {

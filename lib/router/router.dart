@@ -10,6 +10,9 @@ import 'package:nu_mobile/pages/views/biz_map/page_map_pdf.dart';
 import 'package:nu_mobile/pages/views/biz_map/page_map_tech.dart';
 import 'package:nu_mobile/pages/views/biz_parking/page_parking.dart';
 import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles.dart';
+import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles_cl.dart';
+import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles_el.dart';
+import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles_ic.dart';
 
 import '../pages/application.dart';
 import '../pages/introduction.dart';
@@ -20,14 +23,18 @@ import '../pages/views/_cli_settings/page_settings.dart';
   routes: <AutoRoute>[
     // initial route is named "/"
     AutoRoute(page: ApplicationPage, name: "ApplicationPage", initial: true),
-    AutoRoute(page: IntroductionPage, name: "IntroductionPage", fullscreenDialog: true),
+    AutoRoute(
+        page: IntroductionPage,
+        name: "IntroductionPage",
+        fullscreenDialog: true),
 
     //_cli_settings
     AutoRoute(page: PageSettings, name: "PageSettings"),
 
     // _cli_web
     AutoRoute(page: PageWebView, name: "PageWebView"),
-    AutoRoute(page: PageWebBrowse, name: "PageWebBrowse", fullscreenDialog: true),
+    AutoRoute(
+        page: PageWebBrowse, name: "PageWebBrowse", fullscreenDialog: true),
     AutoRoute(page: PageWebPdf, name: "PageWebPdf"),
 
     //biz_account
@@ -44,6 +51,9 @@ import '../pages/views/_cli_settings/page_settings.dart';
 
     //biz_shuttles
     AutoRoute(page: PageShuttles, name: "PageShuttles"),
+    AutoRoute(page: PageShuttlesCL, name: "PageShuttlesCL"),
+    AutoRoute(page: PageShuttlesEL, name: "PageShuttlesEL"),
+    AutoRoute(page: PageShuttlesIC, name: "PageShuttlesIC"),
 
     //biz_parking
     AutoRoute(page: PageParking, name: "PageParking"),

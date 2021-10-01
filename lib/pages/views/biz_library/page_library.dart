@@ -5,11 +5,12 @@ import 'package:nu_mobile/router/router.gr.dart';
 import 'package:nu_mobile/utils/colors.dart';
 import 'package:thindek_ui/thindek_ui.dart';
 
-const String jscodeLibraryHours = "document.getElementsByTagName('header')[0].style.display = 'none';" +
-    "document.getElementById('breadcrumbs',).style.display = 'none';" +
-    "document.getElementById('tab-header',).style.display = 'none';" +
-    "document.getElementById('page',).style.margin = '0';" +
-    "document.getElementsByTagName('footer')[0].style.display = 'none';";
+const String jscodeLibraryHours =
+    "document.getElementsByTagName('header')[0].style.display = 'none';" +
+        "document.getElementById('breadcrumbs',).style.display = 'none';" +
+        "document.getElementById('tab-header',).style.display = 'none';" +
+        "document.getElementById('page',).style.margin = '0';" +
+        "document.getElementsByTagName('footer')[0].style.display = 'none';";
 
 class PageLibrary extends StatefulWidget {
   const PageLibrary({Key? key}) : super(key: key);
@@ -31,7 +32,7 @@ class _PageLibraryState extends State<PageLibrary> {
           color: NUColors.Purple80,
         ),
         title: Text(
-          'Libraries',
+          'Library',
           style: TextStyle(
             color: NUColors.Purple80,
           ),
@@ -43,25 +44,36 @@ class _PageLibraryState extends State<PageLibrary> {
           children: [
             GestureDetector(
               child: Container(
-                margin:
-                    EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO,
+                    vertical: 15.sp),
                 child: Text(
-                  "Building Maps",
-                  style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.black),
+                  "Library Maps",
+                  style: TextStyle(
+                      fontSize: 40.sp,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
                 ),
               ),
             ),
             InkWell(
               onTap: () => context.pushRoute(PageLibraryMapList()),
               child: Container(
-                margin:
-                    EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
-                height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO,
+                    vertical: 15.sp),
+                height: MediaQuery.of(context).size.width *
+                    (1 - 2 * MARGIN_RATIO) *
+                    0.4,
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
                     Container(
-                      height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
+                      height: MediaQuery.of(context).size.width *
+                          (1 - 2 * MARGIN_RATIO) *
+                          0.4,
                       decoration: BoxDecoration(
                         borderRadius: TDKRadii.r10,
                         color: Colors.white,
@@ -74,25 +86,35 @@ class _PageLibraryState extends State<PageLibrary> {
                       ),
                     ),
                     Container(
-                      height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
+                      height: MediaQuery.of(context).size.width *
+                          (1 - 2 * MARGIN_RATIO) *
+                          0.4,
                       decoration: BoxDecoration(
                         borderRadius: TDKRadii.r10,
                         color: Color(0xbc4e2a84),
                       ),
                     ),
                     Container(
-                      height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
+                      height: MediaQuery.of(context).size.width *
+                          (1 - 2 * MARGIN_RATIO) *
+                          0.4,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
                             'Campus',
-                            style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.white),
+                            style: TextStyle(
+                                fontSize: 40.sp,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                           Text(
                             'Find Library >',
-                            style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.white),
+                            style: TextStyle(
+                                fontSize: 40.sp,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ],
                       ),
@@ -102,29 +124,40 @@ class _PageLibraryState extends State<PageLibrary> {
               ),
             ),
             Container(
-              margin:
-                  EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+              margin: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO,
+                  vertical: 15.sp),
               child: Text(
-                "Building Hours",
-                style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.black),
+                "Library Hours",
+                style: TextStyle(
+                    fontSize: 40.sp,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black),
               ),
             ),
             InkWell(
               onTap: () => context.pushRoute(
                 PageWebView(
                     title: 'Building Hours',
-                    url: "https://www.library.northwestern.edu/visit/hours/index.html",
+                    url:
+                        "https://www.library.northwestern.edu/visit/hours/index.html",
                     jscode: jscodeLibraryHours),
               ),
               child: Container(
-                margin:
-                    EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
-                height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO,
+                    vertical: 15.sp),
+                height: MediaQuery.of(context).size.width *
+                    (1 - 2 * MARGIN_RATIO) *
+                    0.4,
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
                     Container(
-                      height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
+                      height: MediaQuery.of(context).size.width *
+                          (1 - 2 * MARGIN_RATIO) *
+                          0.4,
                       decoration: BoxDecoration(
                         borderRadius: TDKRadii.r10,
                         color: Colors.white,
@@ -137,25 +170,35 @@ class _PageLibraryState extends State<PageLibrary> {
                       ),
                     ),
                     Container(
-                      height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
+                      height: MediaQuery.of(context).size.width *
+                          (1 - 2 * MARGIN_RATIO) *
+                          0.4,
                       decoration: BoxDecoration(
                         borderRadius: TDKRadii.r10,
                         color: Color(0xbc4e2a84),
                       ),
                     ),
                     Container(
-                      height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
+                      height: MediaQuery.of(context).size.width *
+                          (1 - 2 * MARGIN_RATIO) *
+                          0.4,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
                             'Open Hours for Specific Library',
-                            style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.white),
+                            style: TextStyle(
+                                fontSize: 40.sp,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                           Text(
                             'View Today\'s Hours >',
-                            style: TextStyle(fontSize: 30.sp, fontWeight: FontWeight.bold, color: Colors.white),
+                            style: TextStyle(
+                                fontSize: 30.sp,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ],
                       ),
