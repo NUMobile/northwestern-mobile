@@ -14,6 +14,11 @@ const String jscodeSearch =
     "document.getElementsByTagName('header')[0].style.display = 'none';" +
         "document.getElementsByTagName('footer')[0].style.display = 'none';";
 
+const String jscodeCalendar =
+    "document.getElementById('header').style.display = 'none';" +
+        "document.getElementById('footer').style.display = 'none';" +
+        "document.getElementById('searchbox').style.display = 'none';";
+
 class TabPageAccount extends StatefulWidget {
   @override
   _TabPageAccountState createState() => _TabPageAccountState();
@@ -174,7 +179,8 @@ class _TabPageAccountState extends State<TabPageAccount> {
                         context.pushRoute(
                           PageWebBrowse(
                               url:
-                                  "https://planitpurple.northwestern.edu/calendar/academic_calendar/"),
+                                  "https://planitpurple.northwestern.edu/calendar/academic_calendar/",
+                              jscode: jscodeCalendar),
                         );
                       },
                       CommunityMaterialIcons.calendar_clock,
@@ -202,16 +208,6 @@ class _TabPageAccountState extends State<TabPageAccount> {
                         );
                       },
                       Icons.print_rounded,
-                    ),
-                    menuList(
-                      'Recreation Membership',
-                      () {
-                        context.pushRoute(
-                          PageWebBrowse(
-                              url: "https://recreation.northwestern.edu/"),
-                        );
-                      },
-                      Icons.sports_handball,
                     ),
                   ],
                 ),
@@ -251,32 +247,32 @@ class _TabPageAccountState extends State<TabPageAccount> {
                     //   CupertinoIcons.chart_bar_circle_fill,
                     // ),
                     menuList(
-                      'Share a Concern',
+                      'Share a Concern (NUhelp)',
                       () {
-                        // context.pushRoute(
-                        //   PageWebBrowse(url: "https://tutorial.munshare.com/"),
-                        // );
+                        context.pushRoute(
+                          PageConcern(),
+                        );
                       },
                       CupertinoIcons.hand_raised_fill,
                     ),
-                    menuList(
-                      'Lost and Found',
-                      () {
-                        // context.pushRoute(
-                        //   PageWebBrowse(url: "https://tutorial.munshare.com/"),
-                        // );
-                      },
-                      Icons.find_replace_rounded,
-                    ),
-                    menuList(
-                      'RespectNU: Report an Incident',
-                      () {
-                        // context.pushRoute(
-                        //   PageWebBrowse(url: "https://tutorial.munshare.com/"),
-                        // );
-                      },
-                      CupertinoIcons.hand_raised_fill,
-                    ),
+                    // menuList(
+                    //   'Lost and Found',
+                    //   () {
+                    //     // context.pushRoute(
+                    //     //   PageWebBrowse(url: "https://tutorial.munshare.com/"),
+                    //     // );
+                    //   },
+                    //   Icons.find_replace_rounded,
+                    // ),
+                    // menuList(
+                    //   'RespectNU: Report an Incident',
+                    //   () {
+                    //     // context.pushRoute(
+                    //     //   PageWebBrowse(url: "https://tutorial.munshare.com/"),
+                    //     // );
+                    //   },
+                    //   CupertinoIcons.hand_raised_fill,
+                    // ),
                     menuList(
                       'Settings',
                       () {
