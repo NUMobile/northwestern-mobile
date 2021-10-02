@@ -22,7 +22,8 @@ class _ViewDiscoverState extends State<ViewDiscover> {
     _scrollController.addListener(() {
       if (_scrollController.hasClients) {
         var shouldScrollTop = false;
-        if (_scrollController.offset >= (150) && !_scrollController.position.outOfRange) {
+        if (_scrollController.offset >= (150) &&
+            !_scrollController.position.outOfRange) {
           shouldScrollTop = true;
         }
         setState(() {
@@ -39,7 +40,8 @@ class _ViewDiscoverState extends State<ViewDiscover> {
   }
 
   _jumpToTop() {
-    _scrollController.animateTo(0.0, duration: Duration(milliseconds: 500), curve: Curves.decelerate);
+    _scrollController.animateTo(0.0,
+        duration: Duration(milliseconds: 500), curve: Curves.decelerate);
     // _scrollController.jumpTo(1);
   }
 
@@ -53,11 +55,15 @@ class _ViewDiscoverState extends State<ViewDiscover> {
         elevation: 0,
         title: Text(
           'News',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 60.sp, color: NUColors.NUPurple),
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 60.sp,
+              color: NUColors.NUPurple),
         ),
         actions: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+            padding: EdgeInsets.symmetric(
+                horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
             child: GestureDetector(
               onTap: () => displayBottomSheet(context),
               child: Icon(
@@ -72,7 +78,8 @@ class _ViewDiscoverState extends State<ViewDiscover> {
       body: TabPageNews(controller: _scrollController),
       floatingActionButton: showToTop
           ? FloatingActionButton(
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0)),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0)),
               backgroundColor: NUColors.NUPurple,
               child: Icon(
                 Icons.keyboard_arrow_up,
@@ -96,7 +103,7 @@ void displayBottomSheet(BuildContext context) {
       ),
       builder: (context) {
         return Container(
-          height: MediaQuery.of(context).size.height * 0.9, // 占屏幕比例
+          height: MediaQuery.of(context).size.height * 0.5, // 占屏幕比例
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -124,11 +131,14 @@ void displayBottomSheet(BuildContext context) {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(top: 10.h, bottom: 10.h),
+                                  margin:
+                                      EdgeInsets.only(top: 10.h, bottom: 10.h),
                                   child: Text(
                                     "Subscribed to Multiple News Feed",
                                     style: TextStyle(
-                                        fontSize: 40.sp, fontWeight: FontWeight.bold, color: NUColors.NUPurple),
+                                        fontSize: 40.sp,
+                                        fontWeight: FontWeight.bold,
+                                        color: NUColors.NUPurple),
                                   ),
                                 ),
                                 DocTitle(text: 'News Source：'),
@@ -159,7 +169,10 @@ void displayBottomSheet(BuildContext context) {
                         margin: EdgeInsets.only(top: 10.h, bottom: 10.h),
                         child: Text(
                           'Close',
-                          style: TextStyle(fontSize: bodyF.sp),
+                          style: TextStyle(
+                              color: Colors.red,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 35.sp),
                         ),
                       ),
                     ],

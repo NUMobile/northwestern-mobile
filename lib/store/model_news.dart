@@ -11,8 +11,9 @@ class NewsModel with ChangeNotifier {
   get rssItemListMultiple => _rssItemListMultiple;
 
   Future<void> fetchNewsNow() async {
-    final client =
-        IOClient(HttpClient()..badCertificateCallback = ((X509Certificate cert, String host, int port) => true));
+    final client = IOClient(HttpClient()
+      ..badCertificateCallback =
+          ((X509Certificate cert, String host, int port) => true));
 
     // RSS feed
     var response = await client.get(Uri.parse(NUNow));
@@ -24,8 +25,9 @@ class NewsModel with ChangeNotifier {
   }
 
   Future<void> fetchMultipleNews() async {
-    final client =
-        IOClient(HttpClient()..badCertificateCallback = ((X509Certificate cert, String host, int port) => true));
+    final client = IOClient(HttpClient()
+      ..badCertificateCallback =
+          ((X509Certificate cert, String host, int port) => true));
 
     // McCormick News feed
     var responseMcCormick = await client.get(Uri.parse(EngineeringNews));
@@ -62,7 +64,7 @@ class NewsModel with ChangeNotifier {
       ..addAll(rssItemListPritzker!)
       ..addAll(rssItemListDaily!)
       ..addAll(rssItemListResearch!)
-      ..addAll(rssItemListMcCormick!)
+      // ..addAll(rssItemListMcCormick!!)
       ..sort((a, b) => b.pubDate!.compareTo(a.pubDate!));
 
     client.close();

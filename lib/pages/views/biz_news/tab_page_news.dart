@@ -17,7 +17,8 @@ class TabPageNews extends StatefulWidget {
   _TabPageNewsState createState() => _TabPageNewsState();
 }
 
-class _TabPageNewsState extends State<TabPageNews> with AutomaticKeepAliveClientMixin {
+class _TabPageNewsState extends State<TabPageNews>
+    with AutomaticKeepAliveClientMixin {
   @override
   bool get wantKeepAlive => true;
 
@@ -38,12 +39,14 @@ class _TabPageNewsState extends State<TabPageNews> with AutomaticKeepAliveClient
           },
           child: model.rssItemListMultiple != null
               ? ListView.separated(
-                  separatorBuilder: (BuildContext context, int index) => Container(
+                  separatorBuilder: (BuildContext context, int index) =>
+                      Container(
                     height: 15.sp,
                   ),
                   itemCount: model.rssItemListMultiple.length,
                   itemBuilder: (BuildContext context, int index) {
-                    return nuNewsCard(index, context, model.rssItemListMultiple);
+                    return nuNewsCard(
+                        index, context, model.rssItemListMultiple);
                   },
                 )
               : Center(child: Text('Loading...')));

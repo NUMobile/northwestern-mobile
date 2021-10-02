@@ -65,6 +65,6 @@ flutter:
   fonts:
     - family: iconfont
       fonts:
-        - asset: assets/fonts/canvas.ttf
+        - asset: assets/fonts/iconfont.ttf
 
 

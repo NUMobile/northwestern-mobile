@@ -11,15 +11,17 @@ import 'package:nu_mobile/utils/colors.dart';
 import 'package:provider/provider.dart';
 import 'package:thindek_ui/thindek_ui.dart';
 
-const String jscodeDirectory = "document.getElementsByTagName('header')[0].style.display = 'none';" +
-    "document.getElementsByTagName('h1')[0].style.display = 'none';" +
-    "document.getElementsByTagName('footer')[0].style.display = 'none';" +
-    "document.getElementById('sidebar').style.display = 'none';";
+const String jscodeDirectory =
+    "document.getElementsByTagName('header')[0].style.display = 'none';" +
+        "document.getElementsByTagName('h1')[0].style.display = 'none';" +
+        "document.getElementsByTagName('footer')[0].style.display = 'none';" +
+        "document.getElementById('sidebar').style.display = 'none';";
 
-const String jscodeCovid = "document.getElementsByTagName('header')[0].style.display = 'none';" +
-    "document.getElementsByTagName('h1')[0].style.display = 'none';" +
-    "document.getElementsByTagName('footer')[0].style.display = 'none';" +
-    "document.getElementById('breadcrumbs').style.display = 'none';";
+const String jscodeCovid =
+    "document.getElementsByTagName('header')[0].style.display = 'none';" +
+        "document.getElementsByTagName('h1')[0].style.display = 'none';" +
+        "document.getElementsByTagName('footer')[0].style.display = 'none';" +
+        "document.getElementById('breadcrumbs').style.display = 'none';";
 
 class ViewHome extends StatefulWidget {
   const ViewHome({Key? key}) : super(key: key);
@@ -28,7 +30,8 @@ class ViewHome extends StatefulWidget {
   _ViewHomeState createState() => _ViewHomeState();
 }
 
-class _ViewHomeState extends State<ViewHome> with AutomaticKeepAliveClientMixin {
+class _ViewHomeState extends State<ViewHome>
+    with AutomaticKeepAliveClientMixin {
   @override
   // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
@@ -84,7 +87,9 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
               Stack(
                 children: [
                   Container(
-                    height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
+                    height: MediaQuery.of(context).size.width *
+                        (1 - 2 * MARGIN_RATIO) *
+                        0.4,
                     decoration: BoxDecoration(
                       borderRadius: TDKRadii.r0,
                       color: Colors.white,
@@ -115,11 +120,16 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
               //   ],
               // ),
               Container(
-                margin:
-                    EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO,
+                    vertical: 15.sp),
                 child: Text(
                   "Take a Northwestern Direction",
-                  style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: NUColors.NUPurple),
+                  style: TextStyle(
+                      fontSize: 40.sp,
+                      fontWeight: FontWeight.bold,
+                      color: NUColors.NUPurple),
                 ),
               ),
               Container(
@@ -148,13 +158,6 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
                         ),
                       );
                     }, Icons.find_in_page_rounded),
-                    homeButton(context, 'Sports', 'Northwestern Recreation', () {
-                      context.pushRoute(
-                        PageWebBrowse(
-                          url: "https://nurecreation.com",
-                        ),
-                      );
-                    }, Icons.sports_football),
                     homeButton(context, 'Dining', 'Places to Eat', () {
                       context.pushRoute(
                         PageWebBrowse(
@@ -162,6 +165,15 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
                         ),
                       );
                     }, Icons.dining),
+                    homeButton(
+                      context,
+                      'Recreation',
+                      'Northwestern Recreation',
+                      () {
+                        context.pushRoute(PageRecreation());
+                      },
+                      Icons.accessibility_new_rounded,
+                    ),
                   ],
                 ),
               ),
@@ -178,11 +190,15 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
                 },
                 child: Container(
                   margin: EdgeInsets.symmetric(vertical: 15.sp),
-                  height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.15,
+                  height: MediaQuery.of(context).size.width *
+                      (1 - 2 * MARGIN_RATIO) *
+                      0.15,
                   child: Stack(
                     children: [
                       Container(
-                        height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.15,
+                        height: MediaQuery.of(context).size.width *
+                            (1 - 2 * MARGIN_RATIO) *
+                            0.15,
                         decoration: BoxDecoration(
                           color: Colors.white,
                           image: DecorationImage(
@@ -198,7 +214,8 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
                         height: 120.sp,
                         child: Text(
                           'COVID-19 and Campus Updates >',
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
                         ),
                       ),
                     ],
@@ -206,16 +223,22 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
                 ),
               ),
               Container(
-                margin:
-                    EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO,
+                    vertical: 15.sp),
                 child: Text(
                   "Northwestern Now",
-                  style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.black),
+                  style: TextStyle(
+                      fontSize: 40.sp,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
                 ),
               ),
               model.rssItemListNow != null
                   ? ListView.separated(
-                      separatorBuilder: (BuildContext context, int index) => Container(
+                      separatorBuilder: (BuildContext context, int index) =>
+                          Container(
                         height: 10.sp,
                       ),
                       shrinkWrap: true,
@@ -237,18 +260,23 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
     });
   }
 
-  Widget homeButton(BuildContext context, String title, String description, dynamic route, IconData icon) {
+  Widget homeButton(BuildContext context, String title, String description,
+      dynamic route, IconData icon) {
     return InkWell(
       onTap: route,
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+        margin: EdgeInsets.symmetric(
+            horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO * 1.3,
+            vertical: 15.sp),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              padding: EdgeInsets.all(15.sp),
+              padding: EdgeInsets.symmetric(vertical: 15.sp, horizontal: 30.sp),
               margin: EdgeInsets.only(bottom: 10.sp),
-              decoration: BoxDecoration(color: NUColors.Purple10, borderRadius: BorderRadius.all(Radius.circular(10))),
+              decoration: BoxDecoration(
+                  color: NUColors.Purple10,
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
               child: Icon(
                 icon,
                 size: 70.sp,
@@ -259,7 +287,10 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
               title,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(fontSize: 25.sp, fontWeight: FontWeight.bold, color: NUColors.NUPurple),
+              style: TextStyle(
+                  fontSize: 25.sp,
+                  fontWeight: FontWeight.bold,
+                  color: NUColors.NUPurple),
             ),
           ],
         ),
@@ -267,13 +298,18 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
     );
   }
 
-  Widget directionButton(BuildContext context, String title, String description, dynamic route, IconData icon) {
+  Widget directionButton(BuildContext context, String title, String description,
+      dynamic route, IconData icon) {
     return InkWell(
       onTap: route,
       child: Container(
         // width: MediaQuery.of(context).size.width * 0.35,
-        decoration: BoxDecoration(color: NUColors.Purple10, borderRadius: BorderRadius.all(Radius.circular(10))),
-        margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+        decoration: BoxDecoration(
+            color: NUColors.Purple10,
+            borderRadius: BorderRadius.all(Radius.circular(10))),
+        margin: EdgeInsets.symmetric(
+            horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO,
+            vertical: 15.sp),
         padding: EdgeInsets.all(20.sp),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -290,7 +326,10 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
                   title,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: NUColors.NUPurple),
+                  style: TextStyle(
+                      fontSize: 40.sp,
+                      fontWeight: FontWeight.bold,
+                      color: NUColors.NUPurple),
                 ),
               ],
             ),

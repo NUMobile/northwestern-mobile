@@ -5,9 +5,8 @@ import 'package:nu_mobile/router/router.gr.dart';
 import 'package:nu_mobile/utils/colors.dart';
 import 'package:nu_mobile/utils/date.dart';
 import 'package:thindek_ui/thindek_ui.dart';
-import 'package:webfeed/domain/rss_item.dart';
 
-Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
+Widget nuNewsCard(int index, BuildContext context, List rssItemList) {
   return InkWell(
     onTap: () {
       context.pushRoute(
@@ -16,7 +15,9 @@ Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
     },
     child: Container(
       color: Colors.white,
-      padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
+      padding: EdgeInsets.symmetric(
+          horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO,
+          vertical: 15.sp),
       child: rssItemList[index].enclosure != null
           ? Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,7 +34,10 @@ Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
                           rssItemList[index].title.toString(),
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: bodyF.sp, color: NUColors.Purple90),
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: bodyF.sp,
+                              color: NUColors.Purple90),
                         ),
                       ),
                       rssItemList[index].description.toString() != ''
@@ -45,8 +49,10 @@ Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
                               child: Text(
                                 rssItemList[index].description.toString(),
                                 maxLines: 2,
-                                style:
-                                    TextStyle(fontWeight: FontWeight.w600, fontSize: 23.sp, color: NUColors.Purple50),
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 23.sp,
+                                    color: NUColors.Purple50),
                               ),
                             )
                           : Container(),
@@ -56,8 +62,10 @@ Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
                           top: 10.sp,
                         ),
                         child: Text(
-                          AppDate.timeLineFormat(rssItemList[index].pubDate!).toString(),
-                          style: TextStyle(fontSize: 22.sp, color: Colors.black38),
+                          AppDate.timeLineFormat(rssItemList[index].pubDate!)
+                              .toString(),
+                          style:
+                              TextStyle(fontSize: 22.sp, color: Colors.black38),
                         ),
                       ),
                     ],
@@ -79,17 +87,22 @@ Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Container(
-                        width: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO),
+                        width: MediaQuery.of(context).size.width *
+                            (1 - 2 * MARGIN_RATIO),
                         alignment: Alignment.topLeft,
                         child: Text(
                           rssItemList[index].title.toString(),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: bodyF.sp, color: NUColors.Purple90),
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: bodyF.sp,
+                              color: NUColors.Purple90),
                         ),
                       ),
                       Container(
-                        width: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO),
+                        width: MediaQuery.of(context).size.width *
+                            (1 - 2 * MARGIN_RATIO),
                         alignment: Alignment.bottomLeft,
                         margin: EdgeInsets.only(
                           top: 10.sp,
@@ -98,11 +111,15 @@ Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
                           rssItemList[index].description.toString(),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 23.sp, color: NUColors.Purple50),
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 23.sp,
+                              color: NUColors.Purple50),
                         ),
                       ),
                       Container(
-                        width: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO),
+                        width: MediaQuery.of(context).size.width *
+                            (1 - 2 * MARGIN_RATIO),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -111,8 +128,11 @@ Widget nuNewsCard(int index, BuildContext context, List<RssItem> rssItemList) {
                                 top: 10.sp,
                               ),
                               child: Text(
-                                AppDate.timeLineFormat(rssItemList[index].pubDate!).toString(),
-                                style: TextStyle(fontSize: 22.sp, color: Colors.black38),
+                                AppDate.timeLineFormat(
+                                        rssItemList[index].pubDate!)
+                                    .toString(),
+                                style: TextStyle(
+                                    fontSize: 22.sp, color: Colors.black38),
                               ),
                             ),
                             rssItemList[index].dc!.subject != null
