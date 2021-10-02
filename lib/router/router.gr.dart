@@ -9,23 +9,24 @@ import 'package:flutter/material.dart' as _i2;
 
 import '../pages/application.dart' as _i3;
 import '../pages/introduction.dart' as _i4;
+import '../pages/views/_cli_settings/page_about.dart' as _i6;
 import '../pages/views/_cli_settings/page_settings.dart' as _i5;
-import '../pages/views/_cli_web/page_web_browse.dart' as _i7;
-import '../pages/views/_cli_web/page_web_pdf.dart' as _i8;
-import '../pages/views/_cli_web/page_web_view.dart' as _i6;
-import '../pages/views/biz_account/page_apps.dart' as _i9;
-import '../pages/views/biz_account/page_concern.dart' as _i10;
-import '../pages/views/biz_library/page_library.dart' as _i11;
-import '../pages/views/biz_library/page_library_map_list.dart' as _i12;
-import '../pages/views/biz_map/page_map.dart' as _i13;
-import '../pages/views/biz_map/page_map_pdf.dart' as _i14;
-import '../pages/views/biz_map/page_map_tech.dart' as _i15;
-import '../pages/views/biz_parking/page_parking.dart' as _i16;
-import '../pages/views/biz_recreation/page_recreation.dart' as _i17;
-import '../pages/views/biz_shuttles/page_shuttles.dart' as _i18;
-import '../pages/views/biz_shuttles/page_shuttles_cl.dart' as _i19;
-import '../pages/views/biz_shuttles/page_shuttles_el.dart' as _i20;
-import '../pages/views/biz_shuttles/page_shuttles_ic.dart' as _i21;
+import '../pages/views/_cli_web/page_web_browse.dart' as _i8;
+import '../pages/views/_cli_web/page_web_pdf.dart' as _i9;
+import '../pages/views/_cli_web/page_web_view.dart' as _i7;
+import '../pages/views/biz_account/page_apps.dart' as _i10;
+import '../pages/views/biz_account/page_concern.dart' as _i11;
+import '../pages/views/biz_library/page_library.dart' as _i12;
+import '../pages/views/biz_library/page_library_map_list.dart' as _i13;
+import '../pages/views/biz_map/page_map.dart' as _i14;
+import '../pages/views/biz_map/page_map_pdf.dart' as _i15;
+import '../pages/views/biz_map/page_map_tech.dart' as _i16;
+import '../pages/views/biz_parking/page_parking.dart' as _i17;
+import '../pages/views/biz_recreation/page_recreation.dart' as _i18;
+import '../pages/views/biz_shuttles/page_shuttles.dart' as _i19;
+import '../pages/views/biz_shuttles/page_shuttles_cl.dart' as _i20;
+import '../pages/views/biz_shuttles/page_shuttles_el.dart' as _i21;
+import '../pages/views/biz_shuttles/page_shuttles_ic.dart' as _i22;
 
 class AppRouter extends _i1.RootStackRouter {
   AppRouter([_i2.GlobalKey<_i2.NavigatorState>? navigatorKey])
@@ -51,11 +52,16 @@ class AppRouter extends _i1.RootStackRouter {
         builder: (_) {
           return _i5.PageSettings();
         }),
+    PageAbout.name: (routeData) => _i1.MaterialPageX<dynamic>(
+        routeData: routeData,
+        builder: (_) {
+          return const _i6.PageAbout();
+        }),
     PageWebView.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (data) {
           final args = data.argsAs<PageWebViewArgs>();
-          return _i6.PageWebView(
+          return _i7.PageWebView(
               url: args.url,
               title: args.title,
               description: args.description,
@@ -65,80 +71,80 @@ class AppRouter extends _i1.RootStackRouter {
         routeData: routeData,
         builder: (data) {
           final args = data.argsAs<PageWebBrowseArgs>();
-          return _i7.PageWebBrowse(url: args.url, jscode: args.jscode);
+          return _i8.PageWebBrowse(url: args.url, jscode: args.jscode);
         },
         fullscreenDialog: true),
     PageWebPdf.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (data) {
           final args = data.argsAs<PageWebPdfArgs>();
-          return _i8.PageWebPdf(title: args.title, url: args.url);
+          return _i9.PageWebPdf(title: args.title, url: args.url);
         }),
     PageApps.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i9.PageApps();
+          return const _i10.PageApps();
         }),
     PageConcern.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return _i10.PageConcern();
+          return _i11.PageConcern();
         }),
     PageLibrary.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i11.PageLibrary();
+          return const _i12.PageLibrary();
         }),
     PageLibraryMapList.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i12.PageLibraryMapList();
+          return const _i13.PageLibraryMapList();
         }),
     PageMap.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i13.PageMap();
+          return const _i14.PageMap();
         }),
     PageMapPdf.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (data) {
           final args = data.argsAs<PageMapPdfArgs>();
-          return _i14.PageMapPdf(title: args.title, path: args.path);
+          return _i15.PageMapPdf(title: args.title, path: args.path);
         }),
     PageMapTech.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return _i15.PageMapTech();
+          return _i16.PageMapTech();
         }),
     PageParking.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i16.PageParking();
+          return const _i17.PageParking();
         }),
     PageRecreation.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i17.PageRecreation();
+          return const _i18.PageRecreation();
         }),
     PageShuttles.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i18.PageShuttles();
+          return const _i19.PageShuttles();
         }),
     PageShuttlesCL.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i19.PageShuttlesCL();
+          return const _i20.PageShuttlesCL();
         }),
     PageShuttlesEL.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i20.PageShuttlesEL();
+          return const _i21.PageShuttlesEL();
         }),
     PageShuttlesIC.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i21.PageShuttlesIC();
+          return const _i22.PageShuttlesIC();
         })
   };
 
@@ -147,6 +153,7 @@ class AppRouter extends _i1.RootStackRouter {
         _i1.RouteConfig(ApplicationPage.name, path: '/'),
         _i1.RouteConfig(IntroductionPage.name, path: '/introduction-page'),
         _i1.RouteConfig(PageSettings.name, path: '/page-settings'),
+        _i1.RouteConfig(PageAbout.name, path: '/page-about'),
         _i1.RouteConfig(PageWebView.name, path: '/page-web-view'),
         _i1.RouteConfig(PageWebBrowse.name, path: '/page-web-browse'),
         _i1.RouteConfig(PageWebPdf.name, path: '/page-web-pdf'),
@@ -190,6 +197,12 @@ class PageSettings extends _i1.PageRouteInfo {
   const PageSettings() : super(name, path: '/page-settings');
 
   static const String name = 'PageSettings';
+}
+
+class PageAbout extends _i1.PageRouteInfo {
+  const PageAbout() : super(name, path: '/page-about');
+
+  static const String name = 'PageAbout';
 }
 
 class PageWebView extends _i1.PageRouteInfo<PageWebViewArgs> {

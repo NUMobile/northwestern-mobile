@@ -361,28 +361,6 @@ class _PageRecreationState extends State<PageRecreation> {
                 ),
               ),
             ),
-            libraryImage(context, 'assets/images/shuttle1440.jpg'),
-            InkWell(
-              onTap: () => context.pushRoute(PageMapPdf(
-                  title: 'Evanston Campus',
-                  path: 'assets/PDF/shuttle-overview.pdf')),
-              child: Container(
-                margin: EdgeInsets.symmetric(
-                    horizontal:
-                        MediaQuery.of(context).size.width * MARGIN_RATIO,
-                    vertical: 15.sp),
-                child: Text(
-                  "Northwestern Shuttles 2020-2021 >",
-                  style: TextStyle(
-                      fontSize: 30.sp,
-                      fontWeight: FontWeight.bold,
-                      color: NUColors.NUPurple,
-                      fontStyle: FontStyle.italic),
-                ),
-              ),
-            ),
-            libraryDescription(
-                'Northwestern University operates several shuttles for students, faculty, and staff on the Evanston and Chicago campuses. '),
           ],
         ),
       ),

@@ -28,7 +28,8 @@ class _ViewMeState extends State<ViewMe> {
         backgroundColor: NUColors.NUPurple,
         elevation: 0,
         title: Container(
-          margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+          margin: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
           child: Container(
             height: 100.sp,
             child: CupertinoTextField(
@@ -56,16 +57,12 @@ class _ViewMeState extends State<ViewMe> {
                     ? context.pushRoute(
                         PageWebBrowse(
                             url: Uri.encodeFull(
-                                "https://search.northwestern.edu/#gsc.tab=0&gsc.q=" + searchText + "&gsc.sort="),
+                                "https://search.northwestern.edu/#gsc.tab=0&gsc.q=" +
+                                    searchText +
+                                    "&gsc.sort="),
                             jscode: jscodeSearch),
                       )
-                    : context.pushRoute(
-                        PageWebView(
-                            url: "https://northwestern.edu",
-                            title: 'Northwestern University',
-                            description: 'Homepage',
-                            jscode: jscodeSearch),
-                      );
+                    : _searchFocus.unfocus();
                 _searchController.clear();
               },
             ),

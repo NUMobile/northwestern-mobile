@@ -1,5 +1,7 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nu_mobile/router/router.gr.dart';
 import 'package:nu_mobile/utils/cache.dart';
 import 'package:nu_mobile/utils/colors.dart';
 import 'package:thindek_ui/thindek_ui.dart';
@@ -10,6 +12,20 @@ class PageSettings extends StatefulWidget {
 }
 
 class _PageSettingsState extends State<PageSettings> {
+  String cacheStr = '';
+
+  loadCache() async {
+    double value = await CacheManager.loadApplicationCache();
+    String str = CacheManager.formatSize(value);
+    setState(() => cacheStr = str);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    loadCache();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,12 +82,9 @@ class _PageSettingsState extends State<PageSettings> {
               children: [
                 ListTile(
                   onTap: () {
-                    // context.pushRoute(
-                    //   PageWebView(
-                    //     title: '关于模时',
-                    //     url: "https://www.munshare.com/p/5eba06e8086e1f00088d8c8b",
-                    //   ),
-                    // );
+                    context.pushRoute(
+                      PageAbout(),
+                    );
                   },
                   title: Text('About'),
                   trailing: Icon(
@@ -109,6 +122,7 @@ class _PageSettingsState extends State<PageSettings> {
                 //     size: 30.sp,
                 //   ),
                 // ),
+                tdkDivider(context),
                 ListTile(
                   onTap: () async {
                     double value = await CacheManager.loadApplicationCache();
@@ -118,22 +132,7 @@ class _PageSettingsState extends State<PageSettings> {
                     tdkToastInfo(msg: str + ' cleared');
                   },
                   title: Text('Clear Cache'),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    size: 30.sp,
-                  ),
-                ),
-                ListTile(
-                  onTap: () {
-                    // context.pushRoute(
-                    //   PageSettingsTest(),
-                    // );
-                  },
-                  title: Text('功能测试'),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    size: 30.sp,
-                  ),
+                  trailing: Text(cacheStr),
                 ),
               ],
             ),

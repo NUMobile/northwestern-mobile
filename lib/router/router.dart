@@ -1,4 +1,5 @@
 import 'package:auto_route/annotations.dart';
+import 'package:nu_mobile/pages/views/_cli_settings/page_about.dart';
 import 'package:nu_mobile/pages/views/_cli_web/page_web_browse.dart';
 import 'package:nu_mobile/pages/views/_cli_web/page_web_pdf.dart';
 import 'package:nu_mobile/pages/views/_cli_web/page_web_view.dart';
@@ -32,6 +33,7 @@ import '../pages/views/_cli_settings/page_settings.dart';
 
     //_cli_settings
     AutoRoute(page: PageSettings, name: "PageSettings"),
+    AutoRoute(page: PageAbout, name: "PageAbout"),
 
     // _cli_web
     AutoRoute(page: PageWebView, name: "PageWebView"),
