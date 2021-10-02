@@ -3,12 +3,14 @@ import 'package:nu_mobile/pages/views/_cli_web/page_web_browse.dart';
 import 'package:nu_mobile/pages/views/_cli_web/page_web_pdf.dart';
 import 'package:nu_mobile/pages/views/_cli_web/page_web_view.dart';
 import 'package:nu_mobile/pages/views/biz_account/page_apps.dart';
+import 'package:nu_mobile/pages/views/biz_account/page_concern.dart';
 import 'package:nu_mobile/pages/views/biz_library/page_library.dart';
 import 'package:nu_mobile/pages/views/biz_library/page_library_map_list.dart';
 import 'package:nu_mobile/pages/views/biz_map/page_map.dart';
 import 'package:nu_mobile/pages/views/biz_map/page_map_pdf.dart';
 import 'package:nu_mobile/pages/views/biz_map/page_map_tech.dart';
 import 'package:nu_mobile/pages/views/biz_parking/page_parking.dart';
+import 'package:nu_mobile/pages/views/biz_recreation/page_recreation.dart';
 import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles.dart';
 import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles_cl.dart';
 import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles_el.dart';
@@ -39,6 +41,7 @@ import '../pages/views/_cli_settings/page_settings.dart';
 
     //biz_account
     AutoRoute(page: PageApps, name: "PageApps"),
+    AutoRoute(page: PageConcern, name: "PageConcern"),
 
     //biz_library
     AutoRoute(page: PageLibrary, name: "PageLibrary"),
@@ -49,14 +52,16 @@ import '../pages/views/_cli_settings/page_settings.dart';
     AutoRoute(page: PageMapPdf, name: "PageMapPdf"),
     AutoRoute(page: PageMapTech, name: "PageMapTech"),
 
+    //biz_parking
+    AutoRoute(page: PageParking, name: "PageParking"),
+    //biz_recreation
+    AutoRoute(page: PageRecreation, name: "PageRecreation"),
+
     //biz_shuttles
     AutoRoute(page: PageShuttles, name: "PageShuttles"),
     AutoRoute(page: PageShuttlesCL, name: "PageShuttlesCL"),
     AutoRoute(page: PageShuttlesEL, name: "PageShuttlesEL"),
     AutoRoute(page: PageShuttlesIC, name: "PageShuttlesIC"),
-
-    //biz_parking
-    AutoRoute(page: PageParking, name: "PageParking"),
   ],
 )
 class $AppRouter {}
