@@ -12,6 +12,7 @@ import 'package:nu_mobile/pages/views/biz_map/page_map_pdf.dart';
 import 'package:nu_mobile/pages/views/biz_map/page_map_tech.dart';
 import 'package:nu_mobile/pages/views/biz_parking/page_parking.dart';
 import 'package:nu_mobile/pages/views/biz_recreation/page_recreation.dart';
+import 'package:nu_mobile/pages/views/biz_resources/page_breathe.dart';
 import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles.dart';
 import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles_cl.dart';
 import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles_el.dart';
@@ -58,6 +59,8 @@ import '../pages/views/_cli_settings/page_settings.dart';
     AutoRoute(page: PageParking, name: "PageParking"),
     //biz_recreation
     AutoRoute(page: PageRecreation, name: "PageRecreation"),
+    //biz_resources
+    AutoRoute(page: PageBreathe, name: "PageBreathe"),
 
     //biz_shuttles
     AutoRoute(page: PageShuttles, name: "PageShuttles"),
