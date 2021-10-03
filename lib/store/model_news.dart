@@ -29,6 +29,11 @@ class NewsModel with ChangeNotifier {
       ..badCertificateCallback =
           ((X509Certificate cert, String host, int port) => true));
 
+    // Communication News feed
+    var responseCommunication = await client.get(Uri.parse(CommunicationNews));
+    var rssFeedCommunication = RssFeed.parse(responseCommunication.body);
+    List<RssItem>? rssItemListCommunication = rssFeedCommunication.items;
+
     // McCormick News feed
     var responseMcCormick = await client.get(Uri.parse(EngineeringNews));
     var rssFeedMcCormick = RssFeed.parse(responseMcCormick.body);
@@ -64,6 +69,7 @@ class NewsModel with ChangeNotifier {
       ..addAll(rssItemListPritzker!)
       ..addAll(rssItemListDaily!)
       ..addAll(rssItemListResearch!)
+      ..addAll(rssItemListCommunication!)
       // ..addAll(rssItemListMcCormick!!)
       ..sort((a, b) => b.pubDate!.compareTo(a.pubDate!));
 
@@ -80,3 +86,4 @@ const String LawNews = 'https://news.law.northwestern.edu/feed/';
 const String DailyNews = 'https://dailynorthwestern.com/feed/rss/';
 const String ResearchNews = 'https://www.research.northwestern.edu/feed/';
 const String EngineeringNews = 'https://mccormick.northwestern.edu/rss/mcc.xml';
+const String CommunicationNews = 'https://communication.northwestern.edu/feed/';

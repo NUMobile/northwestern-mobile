@@ -144,7 +144,7 @@ void displayBottomSheet(BuildContext context) {
                                 DocTitle(text: 'News Source：'),
                                 DocSection(
                                     text:
-                                        'Kellogg Insight, Office for RESEARCH, The Daily Northwestern, Northwestern Pritzker School of Law News,  Feinberg School of Medicine\'s News Center    '),
+                                        'Kellogg Insight, School of Communication, Office for RESEARCH, The Daily Northwestern, Northwestern Pritzker School of Law News,  Feinberg School of Medicine\'s News Center    '),
                               ],
                             ),
                           ),
