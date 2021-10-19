@@ -129,6 +129,7 @@ class _PageSettingsState extends State<PageSettings> {
                     String str = CacheManager.formatSize(value);
                     print('get app cache: ' + str);
                     CacheManager.clearApplicationCache();
+                    loadCache();
                     tdkToastInfo(msg: str + ' cleared');
                   },
                   title: Text('Clear Cache'),
