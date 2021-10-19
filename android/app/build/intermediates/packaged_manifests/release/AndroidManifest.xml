@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.thindek.nplus.android"
+    package="com.kening.nplus.android"
     android:versionCode="2"
     android:versionName="1.0.0" >
 
@@ -86,7 +86,7 @@
 
         <provider
             android:name="io.flutter.plugins.share.ShareFileProvider"
-            android:authorities="com.thindek.nplus.android.flutter.share_provider"
+            android:authorities="com.kening.nplus.android.flutter.share_provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data

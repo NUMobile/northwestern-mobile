@@ -10,7 +10,7 @@ MERGED from [:fluttertoast] /Users/kennysun/nu_mobile/build/fluttertoast/interme
 MERGED from [:sqflite] /Users/kennysun/nu_mobile/build/sqflite/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
 MERGED from [:wakelock] /Users/kennysun/nu_mobile/build/wakelock/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher] /Users/kennysun/nu_mobile/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:2:1-14:12
-MERGED from [:webview_flutter] /Users/kennysun/nu_mobile/build/webview_flutter/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
+MERGED from [:webview_flutter_android] /Users/kennysun/nu_mobile/build/webview_flutter_android/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] /Users/kennysun/nu_mobile/build/path_provider/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
 MERGED from [:shared_preferences] /Users/kennysun/nu_mobile/build/shared_preferences/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
 MERGED from [:share] /Users/kennysun/nu_mobile/build/share/intermediates/library_manifest/release/AndroidManifest.xml:2:1-19:12
@@ -165,8 +165,8 @@ MERGED from [:wakelock] /Users/kennysun/nu_mobile/build/wakelock/intermediates/l
 MERGED from [:wakelock] /Users/kennysun/nu_mobile/build/wakelock/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] /Users/kennysun/nu_mobile/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] /Users/kennysun/nu_mobile/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
-MERGED from [:webview_flutter] /Users/kennysun/nu_mobile/build/webview_flutter/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
-MERGED from [:webview_flutter] /Users/kennysun/nu_mobile/build/webview_flutter/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter_android] /Users/kennysun/nu_mobile/build/webview_flutter_android/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter_android] /Users/kennysun/nu_mobile/build/webview_flutter_android/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /Users/kennysun/nu_mobile/build/path_provider/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /Users/kennysun/nu_mobile/build/path_provider/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] /Users/kennysun/nu_mobile/build/shared_preferences/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44

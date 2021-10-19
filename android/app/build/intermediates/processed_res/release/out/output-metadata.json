@@ -4,7 +4,7 @@
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "com.thindek.nplus.android",
+  "applicationId": "com.kening.nplus.android",
   "variantName": "processReleaseResources",
   "elements": [
     {
