@@ -159,12 +159,11 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
                       );
                     }, Icons.find_in_page_rounded),
                     homeButton(context, 'Dining', 'Places to Eat', () {
-                      context.pushRoute(
-                        PageWebBrowse(
-                          url: "https://dineoncampus.com/northwestern",
-                        ),
-                      );
+                      context.pushRoute(PageDining());
                     }, Icons.dining),
+                    homeButton(context, 'Health', 'Health Service', () {
+                      context.pushRoute(PageHealth());
+                    }, CommunityMaterialIcons.hospital_box),
                     homeButton(
                       context,
                       'Recreation',

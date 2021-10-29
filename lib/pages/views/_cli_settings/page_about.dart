@@ -52,7 +52,7 @@ class _PageAboutState extends State<PageAbout> {
                       style: TextStyle(color: Colors.grey, fontSize: 40.sp),
                     ),
                     Text(
-                      '1.0.0(6)',
+                      '1.0.0(7)',
                       style: TextStyle(color: Colors.grey),
                     ),
                     Container(

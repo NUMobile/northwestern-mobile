@@ -5,6 +5,9 @@ import 'package:nu_mobile/pages/views/_cli_web/page_web_pdf.dart';
 import 'package:nu_mobile/pages/views/_cli_web/page_web_view.dart';
 import 'package:nu_mobile/pages/views/biz_account/page_apps.dart';
 import 'package:nu_mobile/pages/views/biz_account/page_concern.dart';
+import 'package:nu_mobile/pages/views/biz_dining/page_dining.dart';
+import 'package:nu_mobile/pages/views/biz_health/page_breathe.dart';
+import 'package:nu_mobile/pages/views/biz_health/page_health.dart';
 import 'package:nu_mobile/pages/views/biz_library/page_library.dart';
 import 'package:nu_mobile/pages/views/biz_library/page_library_map_list.dart';
 import 'package:nu_mobile/pages/views/biz_map/page_map.dart';
@@ -12,7 +15,6 @@ import 'package:nu_mobile/pages/views/biz_map/page_map_pdf.dart';
 import 'package:nu_mobile/pages/views/biz_map/page_map_tech.dart';
 import 'package:nu_mobile/pages/views/biz_parking/page_parking.dart';
 import 'package:nu_mobile/pages/views/biz_recreation/page_recreation.dart';
-import 'package:nu_mobile/pages/views/biz_resources/page_breathe.dart';
 import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles.dart';
 import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles_cl.dart';
 import 'package:nu_mobile/pages/views/biz_shuttles/page_shuttles_el.dart';
@@ -46,6 +48,13 @@ import '../pages/views/_cli_settings/page_settings.dart';
     AutoRoute(page: PageApps, name: "PageApps"),
     AutoRoute(page: PageConcern, name: "PageConcern"),
 
+    //biz_dining
+    AutoRoute(page: PageDining, name: "PageDining"),
+
+    //biz_health
+    AutoRoute(page: PageHealth, name: "PageHealth"),
+    AutoRoute(page: PageBreathe, name: "PageBreathe"),
+
     //biz_library
     AutoRoute(page: PageLibrary, name: "PageLibrary"),
     AutoRoute(page: PageLibraryMapList, name: "PageLibraryMapList"),
@@ -59,8 +68,6 @@ import '../pages/views/_cli_settings/page_settings.dart';
     AutoRoute(page: PageParking, name: "PageParking"),
     //biz_recreation
     AutoRoute(page: PageRecreation, name: "PageRecreation"),
-    //biz_resources
-    AutoRoute(page: PageBreathe, name: "PageBreathe"),
 
     //biz_shuttles
     AutoRoute(page: PageShuttles, name: "PageShuttles"),

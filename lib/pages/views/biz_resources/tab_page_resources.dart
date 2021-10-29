@@ -27,48 +27,6 @@ class _TabPageResourcesState extends State<TabPageResources> {
     return Container(
       child: ListView(
         children: [
-          /// Health Service
-          resourceTitle(context, 'Health Service'),
-          Container(
-            child: Container(
-              height: MediaQuery.of(context).size.width * 0.2,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  resourceButton(context, 'Evanston', 'Health Service', () {
-                    context.pushRoute(
-                      PageWebBrowse(
-                        url:
-                            "https://www.northwestern.edu/healthservice-evanston/index.html",
-                      ),
-                    );
-                  }, CommunityMaterialIcons.hospital_box_outline),
-                  resourceButton(context, 'Chicago', 'Health Service', () {
-                    context.pushRoute(
-                      PageWebBrowse(
-                        url:
-                            "https://www.northwestern.edu/healthservice-chicago/index.html",
-                      ),
-                    );
-                  }, CommunityMaterialIcons.hospital_box_outline),
-                  resourceButton(context, 'Medicine', 'www.nm.org', () {
-                    context.pushRoute(
-                      PageWebBrowse(
-                        url: "https://www.nm.org/",
-                      ),
-                    );
-                  }, CommunityMaterialIcons.hospital_building),
-                ],
-              ),
-            ),
-          ),
-          resourceCard(context, 'Breathe', scriptBreathe,
-              'assets/images/breathe-hero.jpg', () {
-            context.pushRoute(
-              PageBreathe(),
-            );
-          }),
-
           /// Athletics
           resourceTitle(context, 'Athletics'),
           Container(

@@ -16,18 +16,20 @@ import '../pages/views/_cli_web/page_web_pdf.dart' as _i9;
 import '../pages/views/_cli_web/page_web_view.dart' as _i7;
 import '../pages/views/biz_account/page_apps.dart' as _i10;
 import '../pages/views/biz_account/page_concern.dart' as _i11;
-import '../pages/views/biz_library/page_library.dart' as _i12;
-import '../pages/views/biz_library/page_library_map_list.dart' as _i13;
-import '../pages/views/biz_map/page_map.dart' as _i14;
-import '../pages/views/biz_map/page_map_pdf.dart' as _i15;
-import '../pages/views/biz_map/page_map_tech.dart' as _i16;
-import '../pages/views/biz_parking/page_parking.dart' as _i17;
-import '../pages/views/biz_recreation/page_recreation.dart' as _i18;
-import '../pages/views/biz_resources/page_breathe.dart' as _i19;
-import '../pages/views/biz_shuttles/page_shuttles.dart' as _i20;
-import '../pages/views/biz_shuttles/page_shuttles_cl.dart' as _i21;
-import '../pages/views/biz_shuttles/page_shuttles_el.dart' as _i22;
-import '../pages/views/biz_shuttles/page_shuttles_ic.dart' as _i23;
+import '../pages/views/biz_dining/page_dining.dart' as _i12;
+import '../pages/views/biz_health/page_breathe.dart' as _i21;
+import '../pages/views/biz_health/page_health.dart' as _i13;
+import '../pages/views/biz_library/page_library.dart' as _i14;
+import '../pages/views/biz_library/page_library_map_list.dart' as _i15;
+import '../pages/views/biz_map/page_map.dart' as _i16;
+import '../pages/views/biz_map/page_map_pdf.dart' as _i17;
+import '../pages/views/biz_map/page_map_tech.dart' as _i18;
+import '../pages/views/biz_parking/page_parking.dart' as _i19;
+import '../pages/views/biz_recreation/page_recreation.dart' as _i20;
+import '../pages/views/biz_shuttles/page_shuttles.dart' as _i22;
+import '../pages/views/biz_shuttles/page_shuttles_cl.dart' as _i23;
+import '../pages/views/biz_shuttles/page_shuttles_el.dart' as _i24;
+import '../pages/views/biz_shuttles/page_shuttles_ic.dart' as _i25;
 
 class AppRouter extends _i1.RootStackRouter {
   AppRouter([_i2.GlobalKey<_i2.NavigatorState>? navigatorKey])
@@ -91,66 +93,76 @@ class AppRouter extends _i1.RootStackRouter {
         builder: (_) {
           return _i11.PageConcern();
         }),
+    PageDining.name: (routeData) => _i1.MaterialPageX<dynamic>(
+        routeData: routeData,
+        builder: (_) {
+          return const _i12.PageDining();
+        }),
+    PageHealth.name: (routeData) => _i1.MaterialPageX<dynamic>(
+        routeData: routeData,
+        builder: (_) {
+          return const _i13.PageHealth();
+        }),
     PageLibrary.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i12.PageLibrary();
+          return const _i14.PageLibrary();
         }),
     PageLibraryMapList.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i13.PageLibraryMapList();
+          return const _i15.PageLibraryMapList();
         }),
     PageMap.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i14.PageMap();
+          return const _i16.PageMap();
         }),
     PageMapPdf.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (data) {
           final args = data.argsAs<PageMapPdfArgs>();
-          return _i15.PageMapPdf(title: args.title, path: args.path);
+          return _i17.PageMapPdf(title: args.title, path: args.path);
         }),
     PageMapTech.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return _i16.PageMapTech();
+          return _i18.PageMapTech();
         }),
     PageParking.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i17.PageParking();
+          return const _i19.PageParking();
         }),
     PageRecreation.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i18.PageRecreation();
+          return const _i20.PageRecreation();
         }),
     PageBreathe.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i19.PageBreathe();
+          return const _i21.PageBreathe();
         }),
     PageShuttles.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i20.PageShuttles();
+          return const _i22.PageShuttles();
         }),
     PageShuttlesCL.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i21.PageShuttlesCL();
+          return const _i23.PageShuttlesCL();
         }),
     PageShuttlesEL.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i22.PageShuttlesEL();
+          return const _i24.PageShuttlesEL();
         }),
     PageShuttlesIC.name: (routeData) => _i1.MaterialPageX<dynamic>(
         routeData: routeData,
         builder: (_) {
-          return const _i23.PageShuttlesIC();
+          return const _i25.PageShuttlesIC();
         })
   };
 
@@ -165,6 +177,8 @@ class AppRouter extends _i1.RootStackRouter {
         _i1.RouteConfig(PageWebPdf.name, path: '/page-web-pdf'),
         _i1.RouteConfig(PageApps.name, path: '/page-apps'),
         _i1.RouteConfig(PageConcern.name, path: '/page-concern'),
+        _i1.RouteConfig(PageDining.name, path: '/page-dining'),
+        _i1.RouteConfig(PageHealth.name, path: '/page-health'),
         _i1.RouteConfig(PageLibrary.name, path: '/page-library'),
         _i1.RouteConfig(PageLibraryMapList.name,
             path: '/page-library-map-list'),
@@ -286,6 +300,18 @@ class PageConcern extends _i1.PageRouteInfo {
   const PageConcern() : super(name, path: '/page-concern');
 
   static const String name = 'PageConcern';
+}
+
+class PageDining extends _i1.PageRouteInfo {
+  const PageDining() : super(name, path: '/page-dining');
+
+  static const String name = 'PageDining';
+}
+
+class PageHealth extends _i1.PageRouteInfo {
+  const PageHealth() : super(name, path: '/page-health');
+
+  static const String name = 'PageHealth';
 }
 
 class PageLibrary extends _i1.PageRouteInfo {

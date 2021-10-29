@@ -33,7 +33,6 @@ dependencies:
   webfeed: ^0.7.0
   flutter_launcher_icons: ^0.9.0
   url_launcher: ^6.0.9
-  flutter_native_splash: ^1.2.1
   webviewx: ^0.2.1
 
 
@@ -41,6 +40,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   auto_route_generator: 2.1.0
+  flutter_native_splash: ^1.2.1
   build_runner:
 
 
