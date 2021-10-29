@@ -50,6 +50,10 @@ class _PageShuttlesCLState extends State<PageShuttlesCL> {
                   'https://northwestern.transloc.com/m/route/8005022',
               initialSourceType: SourceType.url,
               onWebViewCreated: (controller) => webviewController = controller,
+              onPageFinished: (string) {
+                webviewController.evalRawJavascript(
+                    "document.getElementsByTagName('body')[0].style.overflow = 'hidden';");
+              },
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * 0.4,
             ),
