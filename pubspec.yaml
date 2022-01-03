@@ -10,14 +10,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  analyzer: ^1.7.1
+  analyzer: ^3.0.0
   intl: ^0.17.0
-  thindek_ui: 1.0.0
+  thindek_ui: ^1.0.1
   cupertino_icons: ^1.0.3
   community_material_icon: ^5.9.55
   webview_flutter: ^2.0.10
-  provider: ^5.0.0
-  auto_route: ^2.3.0
+  provider: ^6.0.2
+  auto_route: ^3.2.1
   shared_preferences: ^2.0.6
   flutter_screenutil: ^5.0.0+2
   flutter_easyrefresh: ^2.2.1
@@ -25,7 +25,7 @@ dependencies:
   share: ^2.0.4
   flutter_html: ^2.1.0
   flutter_parsed_text: ^2.2.1
-  extended_text: ^7.0.0
+  extended_text: ^8.0.2
   flutter_easyloading: ^3.0.0
   advance_pdf_viewer:
     git:
@@ -34,20 +34,25 @@ dependencies:
   flutter_launcher_icons: ^0.9.0
   url_launcher: ^6.0.9
   webviewx: ^0.2.1
+  flutter_smart_dialog: ^3.1.0
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  auto_route_generator: 2.1.0
+  auto_route_generator: ^3.2.1
   flutter_native_splash: ^1.2.1
   build_runner:
 
 
 flutter_icons:
-  android: "launcher_icon"
   ios: true
+  android: true
   image_path: "assets/images/nplus_e.png"
+  image_path_android: "assets/images/nplus_e.png"
+  adaptive_icon_foreground: "assets/images/nplus_tp.png"
+  adaptive_icon_background: "assets/images/nplus_bg.png"
+
 
 flutter_native_splash:
   background_image: "assets/images/nplus_bg.png"

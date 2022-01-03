@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nu_mobile/pages/modules/biz_account/tab_page_account.dart';
 import 'package:nu_mobile/router/router.gr.dart';
@@ -22,10 +23,10 @@ class _ViewMeState extends State<ViewMe> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        brightness: Brightness.dark,
         centerTitle: false,
         titleSpacing: 0,
         backgroundColor: NUColors.NUPurple,
+        systemOverlayStyle: SystemUiOverlayStyle.light,
         elevation: 0,
         title: Container(
           margin: EdgeInsets.symmetric(

@@ -1,4 +1,4 @@
-package com.thindek.nwu.nu_mobile
+package com.kening.nplus.android
 
 import io.flutter.embedding.android.FlutterActivity
 

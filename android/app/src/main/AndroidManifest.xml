@@ -2,8 +2,8 @@
     package="com.kening.nplus.android">
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
    <application
-        android:label="nu_mobile"
-        android:icon="@mipmap/launcher_icon">
+        android:label="NU N+"
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

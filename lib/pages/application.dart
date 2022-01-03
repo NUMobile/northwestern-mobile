@@ -198,6 +198,7 @@ class _ApplicationPageState extends State<ApplicationPage>
         ),
       ],
       child: Scaffold(
+
         body: _buildPageView(),
         bottomNavigationBar: _buildBottomNavigationBar(),
       ),

@@ -64,7 +64,9 @@ class _PageDiningState extends State<PageDining> {
                 size: 30.sp,
               ),
             ),
-            tdkDivider(context),
+            Container(
+                margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.access_time,
@@ -90,7 +92,9 @@ class _PageDiningState extends State<PageDining> {
                 size: 30.sp,
               ),
             ),
-            tdkDivider(context),
+            Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.help_outline_rounded,
@@ -115,7 +119,9 @@ class _PageDiningState extends State<PageDining> {
                 size: 30.sp,
               ),
             ),
-            tdkDivider(context),
+            Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.attach_money_rounded,
@@ -139,7 +145,9 @@ class _PageDiningState extends State<PageDining> {
                 size: 30.sp,
               ),
             ),
-            tdkDivider(context),
+            Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.apps_rounded,

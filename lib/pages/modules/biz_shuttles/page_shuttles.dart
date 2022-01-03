@@ -59,7 +59,9 @@ class _PageShuttlesState extends State<PageShuttles> {
                 size: 30.sp,
               ),
             ),
-            tdkDivider(context),
+            Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.bus_alert,
@@ -83,7 +85,9 @@ class _PageShuttlesState extends State<PageShuttles> {
                 size: 30.sp,
               ),
             ),
-            tdkDivider(context),
+            Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.bus_alert,
@@ -107,7 +111,9 @@ class _PageShuttlesState extends State<PageShuttles> {
                 size: 30.sp,
               ),
             ),
-            tdkDivider(context),
+            Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.apps_rounded,

@@ -51,7 +51,9 @@ class _PageBreatheState extends State<PageBreathe> {
                     size: 30.sp,
                   ),
                 ),
-                tdkDivider(context),
+                Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
                 ListTile(
                   onTap: () {
                     context.pushRoute(
@@ -66,7 +68,9 @@ class _PageBreatheState extends State<PageBreathe> {
                     size: 30.sp,
                   ),
                 ),
-                tdkDivider(context),
+                Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
                 ListTile(
                   onTap: () {
                     context.pushRoute(
@@ -81,7 +85,9 @@ class _PageBreatheState extends State<PageBreathe> {
                     size: 30.sp,
                   ),
                 ),
-                tdkDivider(context),
+                Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
                 ListTile(
                   onTap: () {
                     context.pushRoute(
@@ -96,7 +102,9 @@ class _PageBreatheState extends State<PageBreathe> {
                     size: 30.sp,
                   ),
                 ),
-                tdkDivider(context),
+                Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
                 ListTile(
                   onTap: () {
                     context.pushRoute(

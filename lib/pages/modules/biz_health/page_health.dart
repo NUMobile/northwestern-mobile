@@ -68,7 +68,9 @@ class _PageHealthState extends State<PageHealth> {
                 size: 30.sp,
               ),
             ),
-            tdkDivider(context),
+            Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
             ListTile(
               leading: Icon(
                 CommunityMaterialIcons.hospital_box_outline,
@@ -95,7 +97,9 @@ class _PageHealthState extends State<PageHealth> {
                 size: 30.sp,
               ),
             ),
-            tdkDivider(context),
+            Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
             ListTile(
               leading: Icon(
                 CommunityMaterialIcons.hospital_building,
@@ -121,7 +125,9 @@ class _PageHealthState extends State<PageHealth> {
                 size: 30.sp,
               ),
             ),
-            // tdkDivider(context),
+            // Container(
+            //         margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+            //         child: Divider()),
             // ListTile(
             //   leading: Icon(
             //     Icons.attach_money_rounded,
@@ -145,7 +151,9 @@ class _PageHealthState extends State<PageHealth> {
             //     size: 30.sp,
             //   ),
             // ),
-            // tdkDivider(context),
+            // Container(
+            //         margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+            //         child: Divider()),
             // ListTile(
             //   leading: Icon(
             //     Icons.apps_rounded,

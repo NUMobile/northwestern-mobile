@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:nu_mobile/router/router.gr.dart';
 import 'package:nu_mobile/utils/cache.dart';
 import 'package:nu_mobile/utils/colors.dart';
@@ -122,7 +123,9 @@ class _PageSettingsState extends State<PageSettings> {
                 //     size: 30.sp,
                 //   ),
                 // ),
-                tdkDivider(context),
+                Container(
+                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
                 ListTile(
                   onTap: () async {
                     double value = await CacheManager.loadApplicationCache();
@@ -130,7 +133,7 @@ class _PageSettingsState extends State<PageSettings> {
                     print('get app cache: ' + str);
                     CacheManager.clearApplicationCache();
                     loadCache();
-                    tdkToastInfo(msg: str + ' cleared');
+                    SmartDialog.showToast(str + ' cleared');
                   },
                   title: Text('Clear Cache'),
                   trailing: Text(cacheStr),

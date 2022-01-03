@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nu_mobile/utils/colors.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -26,7 +27,7 @@ class _PageWebBrowseState extends State<PageWebBrowse> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: NUColors.Purple120,
-        brightness: Brightness.dark,
+        systemOverlayStyle: SystemUiOverlayStyle.light,
         toolbarHeight: 0,
       ),
       body: Builder(builder: (BuildContext context) {
