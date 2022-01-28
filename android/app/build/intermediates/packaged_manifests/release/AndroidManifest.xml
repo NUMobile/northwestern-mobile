@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kening.nplus.android"
-    android:versionCode="2"
-    android:versionName="1.0.0" >
+    android:versionCode="1"
+    android:versionName="1.0.1" >
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="30" />
+        android:targetSdkVersion="31" />
 
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -48,7 +48,7 @@
     <application
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
-        android:label="NU N+" >
+        android:label="NU+" >
         <activity
             android:name="com.kening.nplus.android.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
