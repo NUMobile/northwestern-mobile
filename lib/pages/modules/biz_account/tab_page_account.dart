@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_web_browser/flutter_web_browser.dart';
 import 'package:nu_mobile/router/router.gr.dart';
 import 'package:nu_mobile/utils/colors.dart';
 import 'package:nu_mobile/utils/icons.dart';
@@ -26,6 +27,27 @@ class TabPageAccount extends StatefulWidget {
 
 class _TabPageAccountState extends State<TabPageAccount> {
   final EasyRefreshController _controller = EasyRefreshController();
+
+  openBrowserTab() async {
+    await FlutterWebBrowser.openWebPage(
+      url: "https://caesar.ent.northwestern.edu/",
+    );
+  }
+
+  _launchURL() async {
+    const url = 'https://caesar.ent.northwestern.edu/';
+    if (await canLaunch(url)) {
+      await launch(
+        url,
+        forceSafariVC: true,
+        forceWebView: true,
+        enableJavaScript: true,
+      );
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -166,10 +188,12 @@ class _TabPageAccountState extends State<TabPageAccount> {
                     menuList(
                       'CAESAR (NetID)',
                       () {
-                        context.pushRoute(
-                          PageWebBrowse(
-                              url: "https://caesar.ent.northwestern.edu/"),
-                        );
+                        openBrowserTab();
+                        // _launchURL();
+                        // context.pushRoute(
+                        //   PageWebBrowse(
+                        //       url: "https://caesar.ent.northwestern.edu/"),
+                        // );
                       },
                       Icons.assignment_rounded,
                     ),

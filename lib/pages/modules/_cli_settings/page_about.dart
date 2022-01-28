@@ -48,11 +48,11 @@ class _PageAboutState extends State<PageAbout> {
                       ),
                     ),
                     Text(
-                      'NU N+',
+                      'NU+',
                       style: TextStyle(color: Colors.grey, fontSize: 40.sp),
                     ),
                     Text(
-                      '1.0.0(8) Beta1108',
+                      '1.0.0(9) Beta0127',
                       style: TextStyle(color: Colors.grey),
                     ),
                     Container(

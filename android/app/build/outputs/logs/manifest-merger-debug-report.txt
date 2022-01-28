@@ -1,55 +1,90 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-62:12
-INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-62:12
-INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-62:12
-INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-62:12
-MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-62:12
-MERGED from [:shared_preferences_android] /Users/kennysun/Thindek/northwestern-mobile/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:video_player] /Users/kennysun/Thindek/northwestern-mobile/build/video_player/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-70:12
+INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-70:12
+INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-70:12
+INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-70:12
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-70:12
+MERGED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-46:12
+MERGED from [:firebase_core] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:sqflite] /Users/kennysun/Thindek/northwestern-mobile/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher_android] /Users/kennysun/Thindek/northwestern-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:path_provider_android] /Users/kennysun/Thindek/northwestern-mobile/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:advance_pdf_viewer] /Users/kennysun/Thindek/northwestern-mobile/build/advance_pdf_viewer/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [:wakelock] /Users/kennysun/Thindek/northwestern-mobile/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:webview_flutter_android] /Users/kennysun/Thindek/northwestern-mobile/build/webview_flutter_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/b5961366b5d152a41e4848c5fa7a8bf8/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9c306f21b0a68e14f02ee80b7eabdc7a/jetified-exoplayer-dash-2.14.1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/bc37448006a482fafc4e32ebfd46f75f/jetified-exoplayer-smoothstreaming-2.14.1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ad86b8364dafe3749169a467acdcc07a/jetified-exoplayer-core-2.14.1/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.webkit:webkit:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/385d6fc0f66ca457efb199b0b3a6ac61/webkit-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/61ef02e8f0f19ac7089cb3c73160753b/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8108bc8c5f35a568f919dbab3be0e175/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/403e5322101e882ebd13d146c86f92ca/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/13c0fb509b13a17b0b9d6661aa556c61/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/cc96b98ff48db6af1ce175eea35935b8/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c8d7e3b2963d9fc9e8f1cf9aeb870fb3/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+MERGED from [:shared_preferences_android] /Users/kennysun/Thindek/northwestern-mobile/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:video_player] /Users/kennysun/Thindek/northwestern-mobile/build/video_player/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:package_info_plus] /Users/kennysun/Thindek/northwestern-mobile/build/package_info_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:advance_pdf_viewer] /Users/kennysun/Thindek/northwestern-mobile/build/advance_pdf_viewer/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_web_browser] /Users/kennysun/Thindek/northwestern-mobile/build/flutter_web_browser/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:17:1-58:12
+MERGED from [com.google.firebase:firebase-analytics:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f000817e90e941404d86cc242fe2eed4/jetified-firebase-analytics-20.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5c161f38f2be8c48216f24c59d53a87a/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.webkit:webkit:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f392a21fa8e58d5b21c584b8524800ca/webkit-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/d49720ddb677a2e0fa44fc5167665f37/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5e64c0e21117d1114c005c1786e18baa/jetified-exoplayer-dash-2.14.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/207e1f105ca251acfd81af8e8adb20f5/jetified-exoplayer-smoothstreaming-2.14.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a3316ccc1909349affba70c84f76cb45/jetified-exoplayer-core-2.14.1/AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a68b3f770c6090616f7c8b8ed1481144/jetified-play-services-measurement-sdk-20.0.2/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6c8740a787bf3cd800cf1a3f948392ad/jetified-play-services-stats-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9eccc03bb979674d376de47c7422ea9e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8531afb0ab287ec5e32fe80a149b0eda/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.3.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e8ccd86795f903092c5bd0b763960f6e/browser-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8ed8ca501487a1f8b36ada2d552ab154/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c66a955938eb4e8ae8769fc12a54f590/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/774201d557fc90780e26dec2371cb60d/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a43932e26e0a3f567cc0b8fa19e37fb9/jetified-play-services-measurement-sdk-api-20.0.2/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/63293694faa84839f5fed93ee1d0148e/jetified-play-services-measurement-base-20.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f8c50ed83f73a69d1893a3970011e071/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8b25742f8e5c6c9b2d0014fe5c4db743/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/1ba91af7dcd719927f200fb6be4f1e9e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/02d4094109ef78bec8125fb11f0d82c4/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e3a95745d723592e93e65014cbc2ca7d/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/738254dac367c5300353949d5627c04e/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/183b57f428dbe0b25c15eed54b26cdd5/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/d1e04dc5823f1b12814ba0dc241de113/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f6db85e083e679e6b53163595f1fb9d8/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6232049cf7e279326af957e688809df7/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/db75fa2f4f6f895f1d596c7638523e73/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8301b4782012c3069421a374ad2d5f7e/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/322da5b8401187e469f4b396d0c3f707/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/dfd666f93253c1c44313252d76d4a711/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/52f8f76d45e87c4ab84c23c44c3f5a26/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/64a07fb2239bb3e9564aa406f71901c3/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e766c8b9b97b91e423d988ea621ef7f6/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6d04828c1efc108cad83306d2b1f8167/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/d1952f79c4b7aefafb626a3de02fa98d/jetified-transport-api-3.0.0/AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8f675f34d1522d6c16706de5e0c9822d/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9abc49b47a761125ed2823bbffec9f74/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ea9b681ae2ded2baf40e771937649d86/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9070fbd874e849b9e7af0b392d92e03d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1b6a46f556ba8eee6b480c19c98f17d/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/07a16c38d311b7c01b076596f8792a4d/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9d982e90f5c6073084accc793bb08dc8/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml:1:1-13:12
 	package
 		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:2:5-39
 		INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-62:12
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-70:12
 		INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-62:12
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:1-70:12
 		INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -57,164 +92,366 @@ uses-permission#android.permission.QUERY_ALL_PACKAGES
 ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:3:5-77
 	android:name
 		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:3:22-74
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:4:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:5:5-66
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:5:5-66
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:5:5-66
+MERGED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-67
+MERGED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-67
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a43932e26e0a3f567cc0b8fa19e37fb9/jetified-play-services-measurement-sdk-api-20.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a43932e26e0a3f567cc0b8fa19e37fb9/jetified-play-services-measurement-sdk-api-20.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:7:5-80
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:7:5-80
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_MEDIA_LOCATION
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:8:5-79
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:8:5-79
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:8:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:9:5-75
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:9:5-75
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:9:5-75
+	android:name
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:9:22-72
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:10:5-79
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:10:5-79
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:10:5-79
+MERGED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a3316ccc1909349affba70c84f76cb45/jetified-exoplayer-core-2.14.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a3316ccc1909349affba70c84f76cb45/jetified-exoplayer-core-2.14.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a43932e26e0a3f567cc0b8fa19e37fb9/jetified-play-services-measurement-sdk-api-20.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a43932e26e0a3f567cc0b8fa19e37fb9/jetified-play-services-measurement-sdk-api-20.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/64a07fb2239bb3e9564aa406f71901c3/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/64a07fb2239bb3e9564aa406f71901c3/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:11:5-76
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:11:5-76
+MERGED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:11:22-73
 application
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:4:4-44:19
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:12:5-52:19
+MERGED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-17:19
+MERGED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-17:19
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_core] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:url_launcher_android] /Users/kennysun/Thindek/northwestern-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
 MERGED from [:url_launcher_android] /Users/kennysun/Thindek/northwestern-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
 MERGED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
 MERGED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
-MERGED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-analytics:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f000817e90e941404d86cc242fe2eed4/jetified-firebase-analytics-20.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f000817e90e941404d86cc242fe2eed4/jetified-firebase-analytics-20.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5c161f38f2be8c48216f24c59d53a87a/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5c161f38f2be8c48216f24c59d53a87a/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a68b3f770c6090616f7c8b8ed1481144/jetified-play-services-measurement-sdk-20.0.2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a68b3f770c6090616f7c8b8ed1481144/jetified-play-services-measurement-sdk-20.0.2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6c8740a787bf3cd800cf1a3f948392ad/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6c8740a787bf3cd800cf1a3f948392ad/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8ed8ca501487a1f8b36ada2d552ab154/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8ed8ca501487a1f8b36ada2d552ab154/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c66a955938eb4e8ae8769fc12a54f590/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c66a955938eb4e8ae8769fc12a54f590/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/774201d557fc90780e26dec2371cb60d/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/774201d557fc90780e26dec2371cb60d/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/63293694faa84839f5fed93ee1d0148e/jetified-play-services-measurement-base-20.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/63293694faa84839f5fed93ee1d0148e/jetified-play-services-measurement-base-20.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8b25742f8e5c6c9b2d0014fe5c4db743/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8b25742f8e5c6c9b2d0014fe5c4db743/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/1ba91af7dcd719927f200fb6be4f1e9e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/1ba91af7dcd719927f200fb6be4f1e9e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f6db85e083e679e6b53163595f1fb9d8/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f6db85e083e679e6b53163595f1fb9d8/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e766c8b9b97b91e423d988ea621ef7f6/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e766c8b9b97b91e423d988ea621ef7f6/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:25:5-39:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f6db85e083e679e6b53163595f1fb9d8/core-1.6.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:5:9-30
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:13:9-30
 	android:icon
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:6:9-43
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:14:9-43
 activity#com.kening.nplus.android.MainActivity
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:7:9-35:20
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:15:9-43:20
 	android:launchMode
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:9:13-43
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:17:13-43
 	android:hardwareAccelerated
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:12:13-47
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:20:13-47
 	android:windowSoftInputMode
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:13:13-55
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:21:13-55
 	android:configChanges
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:11:13-163
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:19:13-163
 	android:theme
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:10:13-47
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:18:13-47
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:8:13-41
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:16:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:18:13-21:17
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:26:13-29:17
 	android:resource
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:20:15-52
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:28:15-52
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:19:15-70
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:27:15-70
 meta-data#io.flutter.embedding.android.SplashScreenDrawable
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:27:13-30:17
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:35:13-38:17
 	android:resource
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:29:15-61
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:37:15-61
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:28:15-79
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:36:15-79
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:31:13-34:29
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:39:13-42:29
 action#android.intent.action.MAIN
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:32:17-68
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:40:17-68
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:32:25-66
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:40:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:33:17-76
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:41:17-76
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:33:27-74
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:41:27-74
 activity#io.flutter.plugins.urllauncher.WebViewActivity
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:36:8-38:38
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:44:8-46:38
 MERGED from [:url_launcher_android] /Users/kennysun/Thindek/northwestern-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
 MERGED from [:url_launcher_android] /Users/kennysun/Thindek/northwestern-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
 	android:exported
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:38:12-36
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:46:12-36
 	android:theme
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:37:12-70
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:45:12-70
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:36:18-79
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:44:18-79
 meta-data#flutterEmbedding
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:41:9-43:33
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:49:9-51:33
 	android:value
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:43:13-30
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:51:13-30
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:42:13-44
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:50:13-44
 queries
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:45:5-61:15
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:53:5-69:15
 intent#action:name:android.intent.action.VIEW+data:scheme:https
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:47:9-50:18
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:55:9-58:18
 action#android.intent.action.VIEW
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:48:13-65
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:56:13-65
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:48:21-62
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:56:21-62
 data
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:49:13-44
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:57:13-44
 	android:scheme
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:49:19-41
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:57:19-41
 intent#action:name:android.intent.action.DIAL+data:scheme:tel
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:52:9-55:18
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:60:9-63:18
 action#android.intent.action.DIAL
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:53:13-65
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:61:13-65
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:53:21-62
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:61:21-62
 intent#action:name:android.intent.action.SEND+data:mimeType:*/*
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:57:9-60:18
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:65:9-68:18
 action#android.intent.action.SEND
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:58:13-65
+ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:66:13-65
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:58:21-62
+		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml:66:21-62
 uses-sdk
 INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml
-MERGED from [:shared_preferences_android] /Users/kennysun/Thindek/northwestern-mobile/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] /Users/kennysun/Thindek/northwestern-mobile/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:video_player] /Users/kennysun/Thindek/northwestern-mobile/build/video_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:video_player] /Users/kennysun/Thindek/northwestern-mobile/build/video_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] /Users/kennysun/Thindek/northwestern-mobile/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] /Users/kennysun/Thindek/northwestern-mobile/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher_android] /Users/kennysun/Thindek/northwestern-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher_android] /Users/kennysun/Thindek/northwestern-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/kennysun/Thindek/northwestern-mobile/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/kennysun/Thindek/northwestern-mobile/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:advance_pdf_viewer] /Users/kennysun/Thindek/northwestern-mobile/build/advance_pdf_viewer/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:advance_pdf_viewer] /Users/kennysun/Thindek/northwestern-mobile/build/advance_pdf_viewer/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:wakelock] /Users/kennysun/Thindek/northwestern-mobile/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:wakelock] /Users/kennysun/Thindek/northwestern-mobile/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter_android] /Users/kennysun/Thindek/northwestern-mobile/build/webview_flutter_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter_android] /Users/kennysun/Thindek/northwestern-mobile/build/webview_flutter_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/b5961366b5d152a41e4848c5fa7a8bf8/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/b5961366b5d152a41e4848c5fa7a8bf8/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9c306f21b0a68e14f02ee80b7eabdc7a/jetified-exoplayer-dash-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9c306f21b0a68e14f02ee80b7eabdc7a/jetified-exoplayer-dash-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/bc37448006a482fafc4e32ebfd46f75f/jetified-exoplayer-smoothstreaming-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/bc37448006a482fafc4e32ebfd46f75f/jetified-exoplayer-smoothstreaming-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ad86b8364dafe3749169a467acdcc07a/jetified-exoplayer-core-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ad86b8364dafe3749169a467acdcc07a/jetified-exoplayer-core-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.webkit:webkit:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/385d6fc0f66ca457efb199b0b3a6ac61/webkit-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.webkit:webkit:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/385d6fc0f66ca457efb199b0b3a6ac61/webkit-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/61ef02e8f0f19ac7089cb3c73160753b/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/61ef02e8f0f19ac7089cb3c73160753b/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8108bc8c5f35a568f919dbab3be0e175/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8108bc8c5f35a568f919dbab3be0e175/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/403e5322101e882ebd13d146c86f92ca/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/403e5322101e882ebd13d146c86f92ca/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/13c0fb509b13a17b0b9d6661aa556c61/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/13c0fb509b13a17b0b9d6661aa556c61/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/cc96b98ff48db6af1ce175eea35935b8/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/cc96b98ff48db6af1ce175eea35935b8/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c8d7e3b2963d9fc9e8f1cf9aeb870fb3/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c8d7e3b2963d9fc9e8f1cf9aeb870fb3/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [:shared_preferences_android] /Users/kennysun/Thindek/northwestern-mobile/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] /Users/kennysun/Thindek/northwestern-mobile/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:video_player] /Users/kennysun/Thindek/northwestern-mobile/build/video_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:video_player] /Users/kennysun/Thindek/northwestern-mobile/build/video_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:package_info_plus] /Users/kennysun/Thindek/northwestern-mobile/build/package_info_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:package_info_plus] /Users/kennysun/Thindek/northwestern-mobile/build/package_info_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:advance_pdf_viewer] /Users/kennysun/Thindek/northwestern-mobile/build/advance_pdf_viewer/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:advance_pdf_viewer] /Users/kennysun/Thindek/northwestern-mobile/build/advance_pdf_viewer/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_web_browser] /Users/kennysun/Thindek/northwestern-mobile/build/flutter_web_browser/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:flutter_web_browser] /Users/kennysun/Thindek/northwestern-mobile/build/flutter_web_browser/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f000817e90e941404d86cc242fe2eed4/jetified-firebase-analytics-20.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f000817e90e941404d86cc242fe2eed4/jetified-firebase-analytics-20.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5c161f38f2be8c48216f24c59d53a87a/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5c161f38f2be8c48216f24c59d53a87a/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f392a21fa8e58d5b21c584b8524800ca/webkit-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f392a21fa8e58d5b21c584b8524800ca/webkit-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/d49720ddb677a2e0fa44fc5167665f37/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/d49720ddb677a2e0fa44fc5167665f37/jetified-exoplayer-hls-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5e64c0e21117d1114c005c1786e18baa/jetified-exoplayer-dash-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5e64c0e21117d1114c005c1786e18baa/jetified-exoplayer-dash-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/207e1f105ca251acfd81af8e8adb20f5/jetified-exoplayer-smoothstreaming-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/207e1f105ca251acfd81af8e8adb20f5/jetified-exoplayer-smoothstreaming-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a3316ccc1909349affba70c84f76cb45/jetified-exoplayer-core-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a3316ccc1909349affba70c84f76cb45/jetified-exoplayer-core-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a68b3f770c6090616f7c8b8ed1481144/jetified-play-services-measurement-sdk-20.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a68b3f770c6090616f7c8b8ed1481144/jetified-play-services-measurement-sdk-20.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6c8740a787bf3cd800cf1a3f948392ad/jetified-play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6c8740a787bf3cd800cf1a3f948392ad/jetified-play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9eccc03bb979674d376de47c7422ea9e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9eccc03bb979674d376de47c7422ea9e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8531afb0ab287ec5e32fe80a149b0eda/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8531afb0ab287ec5e32fe80a149b0eda/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.3.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e8ccd86795f903092c5bd0b763960f6e/browser-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.3.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e8ccd86795f903092c5bd0b763960f6e/browser-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8ed8ca501487a1f8b36ada2d552ab154/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8ed8ca501487a1f8b36ada2d552ab154/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c66a955938eb4e8ae8769fc12a54f590/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c66a955938eb4e8ae8769fc12a54f590/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/774201d557fc90780e26dec2371cb60d/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/774201d557fc90780e26dec2371cb60d/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a43932e26e0a3f567cc0b8fa19e37fb9/jetified-play-services-measurement-sdk-api-20.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a43932e26e0a3f567cc0b8fa19e37fb9/jetified-play-services-measurement-sdk-api-20.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/63293694faa84839f5fed93ee1d0148e/jetified-play-services-measurement-base-20.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/63293694faa84839f5fed93ee1d0148e/jetified-play-services-measurement-base-20.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f8c50ed83f73a69d1893a3970011e071/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f8c50ed83f73a69d1893a3970011e071/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8b25742f8e5c6c9b2d0014fe5c4db743/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8b25742f8e5c6c9b2d0014fe5c4db743/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/1ba91af7dcd719927f200fb6be4f1e9e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/1ba91af7dcd719927f200fb6be4f1e9e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/02d4094109ef78bec8125fb11f0d82c4/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/02d4094109ef78bec8125fb11f0d82c4/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e3a95745d723592e93e65014cbc2ca7d/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e3a95745d723592e93e65014cbc2ca7d/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/738254dac367c5300353949d5627c04e/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/738254dac367c5300353949d5627c04e/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/183b57f428dbe0b25c15eed54b26cdd5/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/183b57f428dbe0b25c15eed54b26cdd5/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/d1e04dc5823f1b12814ba0dc241de113/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/d1e04dc5823f1b12814ba0dc241de113/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f6db85e083e679e6b53163595f1fb9d8/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/f6db85e083e679e6b53163595f1fb9d8/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6232049cf7e279326af957e688809df7/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6232049cf7e279326af957e688809df7/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/db75fa2f4f6f895f1d596c7638523e73/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/db75fa2f4f6f895f1d596c7638523e73/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8301b4782012c3069421a374ad2d5f7e/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8301b4782012c3069421a374ad2d5f7e/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/322da5b8401187e469f4b396d0c3f707/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/322da5b8401187e469f4b396d0c3f707/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/dfd666f93253c1c44313252d76d4a711/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/dfd666f93253c1c44313252d76d4a711/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/52f8f76d45e87c4ab84c23c44c3f5a26/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/52f8f76d45e87c4ab84c23c44c3f5a26/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/64a07fb2239bb3e9564aa406f71901c3/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/64a07fb2239bb3e9564aa406f71901c3/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e766c8b9b97b91e423d988ea621ef7f6/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/e766c8b9b97b91e423d988ea621ef7f6/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6d04828c1efc108cad83306d2b1f8167/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/6d04828c1efc108cad83306d2b1f8167/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/d1952f79c4b7aefafb626a3de02fa98d/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/d1952f79c4b7aefafb626a3de02fa98d/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8f675f34d1522d6c16706de5e0c9822d/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/8f675f34d1522d6c16706de5e0c9822d/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9abc49b47a761125ed2823bbffec9f74/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9abc49b47a761125ed2823bbffec9f74/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ea9b681ae2ded2baf40e771937649d86/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ea9b681ae2ded2baf40e771937649d86/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9070fbd874e849b9e7af0b392d92e03d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9070fbd874e849b9e7af0b392d92e03d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1b6a46f556ba8eee6b480c19c98f17d/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1b6a46f556ba8eee6b480c19c98f17d/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/07a16c38d311b7c01b076596f8792a4d/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/07a16c38d311b7c01b076596f8792a4d/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9d982e90f5c6073084accc793bb08dc8/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/9d982e90f5c6073084accc793bb08dc8/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -223,10 +460,110 @@ INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/
 	android:minSdkVersion
 		INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml:6:5-66
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:23:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:23:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a43932e26e0a3f567cc0b8fa19e37fb9/jetified-play-services-measurement-sdk-api-20.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/a43932e26e0a3f567cc0b8fa19e37fb9/jetified-play-services-measurement-sdk-api-20.0.2/AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from /Users/kennysun/Thindek/northwestern-mobile/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-16:19
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
+MERGED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
+MERGED from [:firebase_core] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5c161f38f2be8c48216f24c59d53a87a/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5c161f38f2be8c48216f24c59d53a87a/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:51:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:12:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:85
+	android:value
+		ADDED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-82
+	android:name
+		ADDED from [:firebase_analytics] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-128
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
+ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
+	android:exported
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+	android:permission
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+	android:name
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService
+ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
+	android:exported
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+	android:name
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+receiver#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
+ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
+	android:exported
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
+	android:name
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+	android:name
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
+	android:value
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
+	android:name
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
+provider#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider
+ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
+	android:authorities
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
+	android:exported
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+	android:initOrder
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
+	android:name
+		ADDED from [:firebase_messaging] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
+ADDED from [:firebase_core] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_core] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_core] /Users/kennysun/Thindek/northwestern-mobile/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 provider#io.flutter.plugins.share.ShareFileProvider
 ADDED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
@@ -243,9 +580,131 @@ ADDED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/inte
 		ADDED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-65
 	android:name
 		ADDED from [:share] /Users/kennysun/Thindek/northwestern-mobile/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ad86b8364dafe3749169a467acdcc07a/jetified-exoplayer-core-2.14.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/cc96b98ff48db6af1ce175eea35935b8/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/cc96b98ff48db6af1ce175eea35935b8/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:24:5-79
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/00068273a63cfb89716c35089e5caf5b/jetified-play-services-cloud-messaging-17.0.0/AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/ad86b8364dafe3749169a467acdcc07a/jetified-exoplayer-core-2.14.1/AndroidManifest.xml:24:22-76
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/2ab2ed7f0ac25a2fa8cef53df77cd46d/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/398e4343444b196276cf97edf242489f/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:31:17-139
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5c161f38f2be8c48216f24c59d53a87a/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5c161f38f2be8c48216f24c59d53a87a/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/5c161f38f2be8c48216f24c59d53a87a/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/32960b2b1b432774ae692936f60a747a/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/69b39358f036ef76f8a69bff560b48ed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/3784ec65555d9a1500d52a4fff9d831d/jetified-play-services-measurement-impl-20.0.2/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.2] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/09643f77e343f8bedc828adba081d71a/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:40:13-87
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/774201d557fc90780e26dec2371cb60d/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/774201d557fc90780e26dec2371cb60d/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:23:22-76
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/1ba91af7dcd719927f200fb6be4f1e9e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/1ba91af7dcd719927f200fb6be4f1e9e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/1ba91af7dcd719927f200fb6be4f1e9e/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c1582c8c7d77502a6a6a728e612574ab/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /Users/kennysun/.gradle/caches/transforms-2/files-2.1/c0834b8685e6145eb826c7c98f495bfa/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132

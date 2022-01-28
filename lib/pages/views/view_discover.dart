@@ -18,7 +18,6 @@ class _ViewDiscoverState extends State<ViewDiscover>
   bool showToTop = false;
 
   @override
-  // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
 
   @override

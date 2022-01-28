@@ -17,8 +17,14 @@ attr shortcutMatchRequired
 attr ttcIndex
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color notification_action_color_filter
 color notification_icon_bg_color
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
@@ -98,6 +104,11 @@ id action_text
 id actions
 id async
 id blocking
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id chronometer
 id dialog_button
 id forever
@@ -130,7 +141,10 @@ id text
 id text2
 id time
 id title
+integer google_play_services_version
 integer status_bar_notification_info_maxnum
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout custom_dialog
 layout notification_action
 layout notification_action_tombstone
@@ -140,6 +154,12 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 mipmap ic_launcher
 mipmap launcher_icon
+string common_google_play_services_unknown_issue
+string copy_toast_msg
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
+string fcm_fallback_notification_channel_label
 string status_bar_notification_info_overflow
 style LaunchTheme
 style NormalTheme
@@ -157,3 +177,4 @@ styleable FontFamilyFont android_font android_fontWeight android_fontStyle andro
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 xml flutter_share_file_paths
+xml image_share_filepaths

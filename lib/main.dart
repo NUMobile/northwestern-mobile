@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
@@ -6,16 +7,20 @@ import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:nu_mobile/router/router.gr.dart';
 import 'package:nu_mobile/utils/colors.dart';
 
+import 'firebase_options.dart';
+
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   setCustomErrorPage();
   configLoading();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarColor: Colors.transparent,
+      statusBarColor: Colors.transparent,
       statusBarBrightness: Brightness.dark,
-      systemStatusBarContrastEnforced: false
-  ));
+      systemStatusBarContrastEnforced: false));
   runApp(MyApp());
-
 }
 
 void configLoading() {
@@ -49,7 +54,9 @@ class MyApp extends StatelessWidget {
                 primaryIconTheme: IconThemeData(
                   color: NUColors.Purple80,
                 ),
-                primaryColor: NUColors.NUPurple, colorScheme: ColorScheme.fromSwatch().copyWith(secondary: NUColors.NUPurple),
+                primaryColor: NUColors.NUPurple,
+                colorScheme: ColorScheme.fromSwatch()
+                    .copyWith(secondary: NUColors.NUPurple),
               ),
               routeInformationParser: _appRouter.defaultRouteParser(),
               routerDelegate: _appRouter.delegate(),
