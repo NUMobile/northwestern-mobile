@@ -1,11 +1,15 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
+import 'package:get/get.dart';
 import 'package:nu_mobile/router/router.gr.dart';
 import 'package:nu_mobile/utils/cache.dart';
 import 'package:nu_mobile/utils/colors.dart';
 import 'package:thindek_ui/thindek_ui.dart';
+
+import '../../../store/sign_logic.dart';
 
 class PageSettings extends StatefulWidget {
   @override
@@ -41,7 +45,8 @@ class _PageSettingsState extends State<PageSettings> {
           style: TextStyle(color: NUColors.Purple90),
         ),
       ),
-      body: ListView(children: [
+      body:
+          Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         // Container(
         //   // padding: EdgeInsets.fromLTRB(
         //   //     8.w, 4.h, 8.w, 4.h),
@@ -124,7 +129,9 @@ class _PageSettingsState extends State<PageSettings> {
                 //   ),
                 // ),
                 Container(
-                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    margin: EdgeInsets.symmetric(
+                        horizontal:
+                            MediaQuery.of(context).size.width * MARGIN_RATIO),
                     child: Divider()),
                 ListTile(
                   onTap: () async {
@@ -138,10 +145,106 @@ class _PageSettingsState extends State<PageSettings> {
                   title: Text('Clear Cache'),
                   trailing: Text(cacheStr),
                 ),
+                Container(
+                    margin: EdgeInsets.symmetric(
+                        horizontal:
+                            MediaQuery.of(context).size.width * MARGIN_RATIO),
+                    child: Divider()),
+                Obx(() {
+                  return SignLogic.to.isSigned.value
+                      ? ListTile(
+                          onTap: () async {
+                            await SignLogic.to.signOut();
+                            bool isSigned = SignLogic.to.isSigned.value;
+                            print(isSigned.toString());
+                          },
+                          title: Text(
+                            'Log out',
+                            style: TextStyle(
+                                color: Colors.red, fontWeight: FontWeight.bold),
+                          ),
+                        )
+                      : Container();
+                }),
               ],
             ),
           ),
         ),
+        Obx(() {
+          return SignLogic.to.isSigned.value
+              ? ListTile(
+                  onTap: () async {
+                    SmartDialog.show(
+                      // here
+                      backDismiss: false,
+                      clickBgDismissTemp: false,
+                      isLoadingTemp: false,
+                      widget: Container(
+                        height: 200,
+                        width: MediaQuery.of(context).size.width * 0.7,
+                        padding: EdgeInsets.all(20.sp),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white,
+                        ),
+                        alignment: Alignment.topCenter,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            // title
+                            Text(
+                              'Delete your NU+ account?',
+                              style: TextStyle(
+                                  fontSize: 30.sp, fontWeight: FontWeight.bold),
+                            ),
+                            // button (only method of close the dialog)
+                            Wrap(
+                              spacing: 20.sp,
+                              children: [
+                                CupertinoButton(
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 20.sp, vertical: 10.sp),
+                                    color: Colors.white,
+                                    child: Text(
+                                      'Delete',
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                    onPressed: () async {
+                                      await SignLogic.to.deleteUser();
+                                      await SignLogic.to.signOut();
+                                      SmartDialog.dismiss();
+                                    }),
+                                CupertinoButton(
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 20.sp, vertical: 10.sp),
+                                    color: NUColors.NUPurple,
+                                    child: Text(
+                                      'Cancel',
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                    onPressed: () {
+                                      SmartDialog.dismiss();
+                                    }),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                  title: Column(
+                    children: [
+                      Text(
+                        'Delete Account and Log out',
+                        style: TextStyle(color: Colors.grey, fontSize: 25.sp),
+                      ),
+                    ],
+                  ),
+                )
+              : Container();
+        }),
+
         // Consumer<AccountModel>(builder: (context, model, child) {
         //   bool isLogged = Global.currentUserId != '';
         //   return isLogged

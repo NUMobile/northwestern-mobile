@@ -1,5 +1,7 @@
 import 'package:auto_route/annotations.dart';
 import 'package:nu_mobile/pages/modules/_cli_settings/page_about.dart';
+import 'package:nu_mobile/pages/modules/_cli_sign/page_sign_in.dart';
+import 'package:nu_mobile/pages/modules/_cli_sign/page_sign_up.dart';
 import 'package:nu_mobile/pages/modules/_cli_web/page_web_browse.dart';
 import 'package:nu_mobile/pages/modules/_cli_web/page_web_pdf.dart';
 import 'package:nu_mobile/pages/modules/_cli_web/page_web_view.dart';
@@ -13,8 +15,10 @@ import 'package:nu_mobile/pages/modules/biz_library/page_library_map_list.dart';
 import 'package:nu_mobile/pages/modules/biz_map/page_map.dart';
 import 'package:nu_mobile/pages/modules/biz_map/page_map_pdf.dart';
 import 'package:nu_mobile/pages/modules/biz_map/page_map_tech.dart';
+import 'package:nu_mobile/pages/modules/biz_news/page_news.dart';
 import 'package:nu_mobile/pages/modules/biz_parking/page_parking.dart';
 import 'package:nu_mobile/pages/modules/biz_recreation/page_recreation.dart';
+import 'package:nu_mobile/pages/modules/biz_resources/page_create_pulse.dart';
 import 'package:nu_mobile/pages/modules/biz_shuttles/page_shuttles.dart';
 import 'package:nu_mobile/pages/modules/biz_shuttles/page_shuttles_cl.dart';
 import 'package:nu_mobile/pages/modules/biz_shuttles/page_shuttles_el.dart';
@@ -23,6 +27,7 @@ import 'package:nu_mobile/pages/modules/biz_shuttles/page_shuttles_ic.dart';
 import '../pages/application.dart';
 import '../pages/introduction.dart';
 import '../pages/modules/_cli_settings/page_settings.dart';
+import '../pages/modules/biz_resources/page_report.dart';
 
 @MaterialAutoRouter(
   replaceInRouteName: 'Page,Route',
@@ -39,10 +44,21 @@ import '../pages/modules/_cli_settings/page_settings.dart';
     AutoRoute(page: PageAbout, name: "PageAbout"),
 
     // _cli_web
+    AutoRoute(page: PageSignUp, name: "PageSignUp", fullscreenDialog: true),
+    AutoRoute(page: PageSignIn, name: "PageSignIn", fullscreenDialog: true),
+
+    // _cli_web
     AutoRoute(page: PageWebView, name: "PageWebView"),
     AutoRoute(
         page: PageWebBrowse, name: "PageWebBrowse", fullscreenDialog: true),
     AutoRoute(page: PageWebPdf, name: "PageWebPdf"),
+
+    AutoRoute(
+      page: PageCreatePulse,
+      name: "PageCreatePulse",
+      fullscreenDialog: true,
+    ),
+    AutoRoute(page: PageReport, name: "PageReport", fullscreenDialog: true),
 
     //biz_account
     AutoRoute(page: PageApps, name: "PageApps"),
@@ -64,6 +80,8 @@ import '../pages/modules/_cli_settings/page_settings.dart';
     AutoRoute(page: PageMapPdf, name: "PageMapPdf"),
     AutoRoute(page: PageMapTech, name: "PageMapTech"),
 
+    //biz_news
+    AutoRoute(page: PageNews, name: "PageNews"),
     //biz_parking
     AutoRoute(page: PageParking, name: "PageParking"),
     //biz_recreation

@@ -2,13 +2,13 @@ import 'dart:ui';
 
 class NUColors {
   ///  Northwestern Purple
-  static const Color NUPurple = Color.fromARGB(255, 078, 042, 132);
+  static const Color NUPurple = Color.fromARGB(255, 78, 42, 132);
 
   ///  Purple 90
   static const Color Purple90 = Color.fromARGB(255, 91, 59, 140);
 
   ///  Purple 80
-  static const Color Purple80 = Color.fromARGB(255, 104, 076, 150);
+  static const Color Purple80 = Color.fromARGB(255, 104, 76, 150);
 
   /// Purple 70
   static const Color Purple70 = Color.fromARGB(255, 118, 093, 160);

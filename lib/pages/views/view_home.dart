@@ -2,14 +2,13 @@ import 'package:auto_route/auto_route.dart';
 import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:nu_mobile/pages/modules/biz_news/widget_news.dart';
 import 'package:nu_mobile/router/router.gr.dart';
-import 'package:nu_mobile/store/model_news.dart';
+import 'package:nu_mobile/store/news_logic.dart';
 import 'package:nu_mobile/utils/colors.dart';
-import 'package:provider/provider.dart';
 import 'package:thindek_ui/thindek_ui.dart';
 
 const String jscodeDirectory =
@@ -75,179 +74,187 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<NewsModel>(builder: (context, model, child) {
-      return EasyRefresh(
-          enableControlFinishRefresh: true,
-          controller: _controller,
-          header: BallPulseHeader(color: NUColors.NUPurple),
-          onRefresh: () async {
-            await model.fetchNewsNow();
-            _controller.finishRefresh();
-          },
-          child: ListView(
-            children: [
-              Stack(
-                children: [
-                  Container(
-                    height: MediaQuery.of(context).size.width *
-                        (1 - 2 * MARGIN_RATIO) *
-                        0.4,
-                    decoration: BoxDecoration(
-                      borderRadius: TDKRadii.r0,
-                      color: Colors.white,
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: AssetImage(
-                          'assets/images/uhall14402.jpg',
-                        ),
+    return EasyRefresh(
+        enableControlFinishRefresh: true,
+        controller: _controller,
+        header: BallPulseHeader(color: NUColors.NUPurple),
+        onRefresh: () async {
+          await NewsLogic.to.fetchNewsNow();
+          _controller.finishRefresh();
+        },
+        child: ListView(
+          children: [
+            Stack(
+              children: [
+                Container(
+                  height: MediaQuery.of(context).size.width *
+                      (1 - 2 * MARGIN_RATIO) *
+                      0.4,
+                  decoration: BoxDecoration(
+                    borderRadius: TDKRadii.r0,
+                    color: Colors.white,
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage(
+                        'assets/images/uhall14402.jpg',
                       ),
                     ),
                   ),
+                ),
+              ],
+            ),
+            // Row(
+            //   children: [
+            //     TextButton.icon(
+            //       icon: Icon(
+            //         Icons.local_library,
+            //         color: Colors.white,
+            //       ),
+            //       onPressed: () {},
+            //       style: TextButton.styleFrom(backgroundColor: NUColors.NUPurple),
+            //       label: Text(
+            //         'Libaray',
+            //         style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.white),
+            //       ),
+            //     )
+            //   ],
+            // ),
+            Container(
+              margin: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO,
+                  vertical: 15.sp),
+              child: Text(
+                "Take a Northwestern Direction",
+                style: TextStyle(
+                    fontSize: 40.sp,
+                    fontWeight: FontWeight.bold,
+                    color: NUColors.NUPurple),
+              ),
+            ),
+            Container(
+              height: MediaQuery.of(context).size.width * 0.4,
+              child: Wrap(
+                direction: Axis.horizontal,
+                children: [
+                  homeButton(context, 'Maps', 'Northwestern Maps', () {
+                    context.pushRoute(PageMap());
+                  }, CommunityMaterialIcons.compass),
+                  homeButton(context, 'Shuttles', 'Campus Shuttles', () {
+                    context.pushRoute(PageShuttles());
+                  }, Icons.directions_bus_rounded),
+                  homeButton(context, 'Parking', 'Parking Locations', () {
+                    context.pushRoute(PageParking());
+                  }, Icons.garage_rounded),
+                  homeButton(context, 'Library', 'Visit all Libraries', () {
+                    context.pushRoute(PageLibrary());
+                  }, Icons.account_balance_rounded),
+                  homeButton(context, 'Directory', 'Browse Offices', () {
+                    context.pushRoute(
+                      PageWebView(
+                        title: 'Browse Departments',
+                        url: "https://offices.northwestern.edu",
+                        jscode: jscodeDirectory,
+                      ),
+                    );
+                  }, Icons.find_in_page_rounded),
+                  homeButton(context, 'Dining', 'Places to Eat', () {
+                    context.pushRoute(PageDining());
+                  }, Icons.dining),
+                  // homeButton(context, 'Health', 'Health Service', () {
+                  //   context.pushRoute(PageHealth());
+                  // }, CommunityMaterialIcons.hospital_box),
+                  homeButton(
+                    context,
+                    'Recreation',
+                    'Northwestern Recreation',
+                    () {
+                      context.pushRoute(PageRecreation());
+                    },
+                    Icons.accessibility_new_rounded,
+                  ),
+                  homeButton(
+                    context,
+                    'News',
+                    'Read News',
+                    () {
+                      context.pushRoute(PageNews());
+                    },
+                    Icons.feed,
+                  ),
                 ],
               ),
-              // Row(
-              //   children: [
-              //     TextButton.icon(
-              //       icon: Icon(
-              //         Icons.local_library,
-              //         color: Colors.white,
-              //       ),
-              //       onPressed: () {},
-              //       style: TextButton.styleFrom(backgroundColor: NUColors.NUPurple),
-              //       label: Text(
-              //         'Libaray',
-              //         style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold, color: Colors.white),
-              //       ),
-              //     )
-              //   ],
-              // ),
-              Container(
-                margin: EdgeInsets.symmetric(
-                    horizontal:
-                        MediaQuery.of(context).size.width * MARGIN_RATIO,
-                    vertical: 15.sp),
-                child: Text(
-                  "Take a Northwestern Direction",
-                  style: TextStyle(
-                      fontSize: 40.sp,
-                      fontWeight: FontWeight.bold,
-                      color: NUColors.NUPurple),
-                ),
-              ),
-              Container(
-                height: MediaQuery.of(context).size.width * 0.4,
-                child: Wrap(
-                  direction: Axis.horizontal,
+            ),
+            InkWell(
+              onTap: () {
+                context.pushRoute(PageWebBrowse(
+                        url: 'https://www.northwestern.edu/about/index.html')
+                    // PageWebView(
+                    //   title: 'COVID-19 Dashboard',
+                    //   url:
+                    //       "https://www.northwestern.edu/coronavirus-covid-19-updates/university-status/dashboard/index.html",
+                    //   jscode: jscodeCovid,
+                    // ),
+                    );
+              },
+              child: Container(
+                margin: EdgeInsets.symmetric(vertical: 15.sp),
+                height: MediaQuery.of(context).size.width *
+                    (1 - 2 * MARGIN_RATIO) *
+                    0.15,
+                child: Stack(
                   children: [
-                    homeButton(context, 'Maps', 'Northwestern Maps', () {
-                      context.pushRoute(PageMap());
-                    }, CommunityMaterialIcons.compass),
-                    homeButton(context, 'Shuttles', 'Campus Shuttles', () {
-                      context.pushRoute(PageShuttles());
-                    }, Icons.directions_bus_rounded),
-                    homeButton(context, 'Parking', 'Parking Locations', () {
-                      context.pushRoute(PageParking());
-                    }, Icons.garage_rounded),
-                    homeButton(context, 'Library', 'Visit all Libraries', () {
-                      context.pushRoute(PageLibrary());
-                    }, Icons.account_balance_rounded),
-                    homeButton(context, 'Directory', 'Browse Offices', () {
-                      context.pushRoute(
-                        PageWebView(
-                          title: 'Browse Departments',
-                          url: "https://offices.northwestern.edu",
-                          jscode: jscodeDirectory,
+                    Container(
+                      height: MediaQuery.of(context).size.width *
+                          (1 - 2 * MARGIN_RATIO) *
+                          0.15,
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage(
+                            'assets/images/purple-polygons.png',
+                          ),
                         ),
-                      );
-                    }, Icons.find_in_page_rounded),
-                    homeButton(context, 'Dining', 'Places to Eat', () {
-                      context.pushRoute(PageDining());
-                    }, Icons.dining),
-                    // homeButton(context, 'Health', 'Health Service', () {
-                    //   context.pushRoute(PageHealth());
-                    // }, CommunityMaterialIcons.hospital_box),
-                    homeButton(
-                      context,
-                      'Recreation',
-                      'Northwestern Recreation',
-                      () {
-                        context.pushRoute(PageRecreation());
-                      },
-                      Icons.accessibility_new_rounded,
+                      ),
+                    ),
+                    Container(
+                      alignment: Alignment.center,
+                      height: 120.sp,
+                      child: const Text(
+                        'About Northwestern >',
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ],
                 ),
               ),
-              InkWell(
-                onTap: () {
-                  context.pushRoute(PageWebBrowse(
-                          url: 'https://www.northwestern.edu/about/index.html')
-                      // PageWebView(
-                      //   title: 'COVID-19 Dashboard',
-                      //   url:
-                      //       "https://www.northwestern.edu/coronavirus-covid-19-updates/university-status/dashboard/index.html",
-                      //   jscode: jscodeCovid,
-                      // ),
-                      );
-                },
-                child: Container(
-                  margin: EdgeInsets.symmetric(vertical: 15.sp),
-                  height: MediaQuery.of(context).size.width *
-                      (1 - 2 * MARGIN_RATIO) *
-                      0.15,
-                  child: Stack(
-                    children: [
-                      Container(
-                        height: MediaQuery.of(context).size.width *
-                            (1 - 2 * MARGIN_RATIO) *
-                            0.15,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: AssetImage(
-                              'assets/images/purple-polygons.png',
-                            ),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 120.sp,
-                        child: Text(
-                          'About Northwestern >',
-                          style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO,
+                  vertical: 15.sp),
+              child: Text(
+                "Northwestern Now",
+                style: TextStyle(
+                    fontSize: 40.sp,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(
-                    horizontal:
-                        MediaQuery.of(context).size.width * MARGIN_RATIO,
-                    vertical: 15.sp),
-                child: Text(
-                  "Northwestern Now",
-                  style: TextStyle(
-                      fontSize: 40.sp,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black),
-                ),
-              ),
-              model.rssItemListNow != null
+            ),
+            Obx(
+              () => NewsLogic.to.rssItemListNow.isNotEmpty
                   ? ListView.separated(
                       separatorBuilder: (BuildContext context, int index) =>
                           Container(
                         height: 10.sp,
                       ),
                       shrinkWrap: true,
-                      physics: NeverScrollableScrollPhysics(),
-                      itemCount: model.rssItemListNow.length,
+                      physics: const NeverScrollableScrollPhysics(),
+                      itemCount: NewsLogic.to.rssItemListNow.length,
                       itemBuilder: (BuildContext context, int index) {
-                        return nuNewsCard(index, context, model.rssItemListNow);
+                        return nuNewsCard(
+                            index, context, NewsLogic.to.rssItemListNow);
                       },
                     )
                   : Center(
@@ -257,9 +264,9 @@ class _TabPageNewsNowState extends State<TabPageNewsNow> {
                         Text('Pull down to Refresh'),
                       ],
                     )),
-            ],
-          ));
-    });
+            )
+          ],
+        ));
   }
 
   Widget homeButton(BuildContext context, String title, String description,

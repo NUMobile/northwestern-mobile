@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "67002914537",
+    "project_id": "nunplus-4f892",
+    "storage_bucket": "nunplus-4f892.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67002914537:android:7f6159e6b39874e20f8278",
+        "android_client_info": {
+          "package_name": "com.kening.nplus.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67002914537-1n5fh14429rg6582h27ktpjpiu1dakpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLrQ8PF0wyQJddrg_f_qKyONrrSFVfI4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67002914537-1n5fh14429rg6582h27ktpjpiu1dakpb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "67002914537-nes56hkse0gbjiqi16kov4tuq7sfq167.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kening.nplus.ios",
+                "app_store_id": "1588021318"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

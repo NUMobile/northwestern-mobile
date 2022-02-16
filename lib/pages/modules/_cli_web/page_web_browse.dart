@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -10,17 +11,25 @@ class PageWebBrowse extends StatefulWidget {
   final String url;
   final String? jscode;
 
-  PageWebBrowse({required this.url, this.jscode});
+  const PageWebBrowse({Key? key, required this.url, this.jscode})
+      : super(key: key);
 
   @override
   _PageWebBrowseState createState() => _PageWebBrowseState();
 }
 
 class _PageWebBrowseState extends State<PageWebBrowse> {
-  final Completer<WebViewController> _controller = Completer<WebViewController>();
+  final Completer<WebViewController> _controller =
+      Completer<WebViewController>();
 
   late WebViewController _webViewController;
   double lineProgress = 0.0;
+
+  @override
+  void initState() {
+    super.initState();
+    if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +76,8 @@ class _PageWebBrowseState extends State<PageWebBrowse> {
       }),
       bottomNavigationBar: Container(
         color: Colors.white,
-        height: kBottomNavigationBarHeight + MediaQuery.of(context).padding.bottom,
+        height:
+            kBottomNavigationBarHeight + MediaQuery.of(context).padding.bottom,
         child: Column(
           children: [
             _progressBar(lineProgress, context),
@@ -89,7 +99,10 @@ class _PageWebBrowseState extends State<PageWebBrowse> {
                     child: Center(
                       child: Text(
                         'Close',
-                        style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold, fontSize: 35.sp),
+                        style: TextStyle(
+                            color: Colors.red,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 35.sp),
                       ),
                     ),
                   ),
@@ -117,10 +130,12 @@ class _PageWebBrowseState extends State<PageWebBrowse> {
           )
         : Container();
   }
+
 }
 
 class NavigationControls extends StatelessWidget {
-  const NavigationControls(this._webViewControllerFuture) : assert(_webViewControllerFuture != null);
+  const NavigationControls(this._webViewControllerFuture)
+      : assert(_webViewControllerFuture != null);
 
   final Future<WebViewController> _webViewControllerFuture;
 
@@ -128,8 +143,10 @@ class NavigationControls extends StatelessWidget {
   Widget build(BuildContext context) {
     return FutureBuilder<WebViewController>(
       future: _webViewControllerFuture,
-      builder: (BuildContext context, AsyncSnapshot<WebViewController> snapshot) {
-        final bool webViewReady = snapshot.connectionState == ConnectionState.done;
+      builder:
+          (BuildContext context, AsyncSnapshot<WebViewController> snapshot) {
+        final bool webViewReady =
+            snapshot.connectionState == ConnectionState.done;
         final WebViewController controller = snapshot.data!;
         return Row(
           children: <Widget>[
@@ -159,7 +176,8 @@ class NavigationControls extends StatelessWidget {
                       } else {
                         // ignore: deprecated_member_use
                         Scaffold.of(context).showSnackBar(
-                          const SnackBar(content: Text("No forward history item")),
+                          const SnackBar(
+                              content: Text("No forward history item")),
                         );
                         return;
                       }

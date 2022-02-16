@@ -227,15 +227,12 @@ Widget resourceButton(BuildContext context, String title, String description,
       children: [
         Container(
           decoration: BoxDecoration(
-            color: NUColors.Purple10,
-            // image: DecorationImage(
-            //   fit: BoxFit.cover,
-            //   image: AssetImage(
-            //     'assets/images/purple-polygons.png',
-            //   ),
-            // ),
-            borderRadius: BorderRadius.all(Radius.circular(10)),
-          ),
+              borderRadius: TDKRadii.r10,
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [NUColors.Purple40, Colors.white.withOpacity(0.4)],
+              )),
           margin: EdgeInsets.only(
               left: MediaQuery.of(context).size.width * MARGIN_RATIO,
               top: 15.sp,

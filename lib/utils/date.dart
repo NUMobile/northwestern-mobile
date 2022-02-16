@@ -72,9 +72,13 @@ class AppDate {
     var now = DateTime.now();
     var difference = now.difference(dt);
 
+    if ((difference.inSeconds < 60) & (difference.inSeconds > 1)) {
+      return "${difference.inSeconds} s ago";
+    }
+
 // 1天内
     if (difference.inHours < 1) {
-      return "${difference.inHours} hour ago";
+      return "${difference.inMinutes} mins ago";
     }
 
     if ((difference.inHours < 24) & (difference.inHours > 1)) {
@@ -86,12 +90,12 @@ class AppDate {
 //     }
 // MM-dd
     else if (difference.inDays < 365) {
-      final dtFormat = new DateFormat.yMMMMd('en_US');
+      final dtFormat = DateFormat.MMMd('en_US');
       return dtFormat.format(dt);
     }
 // yyyy-MM-dd
     else {
-      final dtFormat = new DateFormat('yyyy-MM-dd');
+      final dtFormat = DateFormat.yMMMMd('en_US');
       var str = dtFormat.format(dt);
       return str;
     }

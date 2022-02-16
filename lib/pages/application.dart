@@ -1,14 +1,15 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nu_mobile/pages/views/view_discover.dart';
-import 'package:nu_mobile/store/model_news.dart';
+import 'package:nu_mobile/store/sign_logic.dart';
 import 'package:nu_mobile/utils/colors.dart';
-import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../store/constants.dart';
 import 'views/view_home.dart';
 import 'views/view_me.dart';
 import 'views/view_resources.dart';
@@ -43,7 +44,7 @@ class _ApplicationPageState extends State<ApplicationPage>
   late PageController _pageController;
 
   final List<BottomNavigationBarItem> _bottomTabs = <BottomNavigationBarItem>[
-    new BottomNavigationBarItem(
+    BottomNavigationBarItem(
       icon: GestureDetector(
         onDoubleTap: () {
           print('double tap detected');
@@ -56,50 +57,52 @@ class _ApplicationPageState extends State<ApplicationPage>
           size: 70.sp,
         ),
       ),
-      activeIcon: Icon(
-        Icons.home_rounded,
-        color: NUColors.Purple90,
-        size: 70.sp,
-      ),
-      // activeIcon: Container(
-      //   height: 70.sp,
-      //   width: 70.sp,
-      //   child: Image.asset(
-      //     'assets/images/msh.png',
-      //   ),
+      // activeIcon: Icon(
+      //   Icons.home_rounded,
+      //   color: NUColors.Purple90,
+      //   size: 70.sp,
       // ),
+      activeIcon: Container(
+        height: 70.sp,
+        width: 70.sp,
+        child: ClipOval(
+          child: Image.asset(
+            'assets/images/nplus_432.png',
+          ),
+        ),
+      ),
       label: 'Home',
       backgroundColor: Colors.transparent,
     ),
-    new BottomNavigationBarItem(
+    BottomNavigationBarItem(
       icon: Icon(
-        Icons.feed,
+        Icons.flag,
         color: Colors.black26,
         size: 70.sp,
       ),
       activeIcon: Icon(
-        Icons.feed,
+        Icons.flag,
         color: NUColors.Purple90,
         size: 70.sp,
       ),
       label: 'Discover',
       backgroundColor: Colors.transparent,
     ),
-    new BottomNavigationBarItem(
+    BottomNavigationBarItem(
       icon: Icon(
-        Icons.widgets_rounded,
+        Icons.apps_rounded,
         color: Colors.black26,
         size: 70.sp,
       ),
       activeIcon: Icon(
-        Icons.widgets_rounded,
+        Icons.apps_rounded,
         color: NUColors.Purple90,
         size: 70.sp,
       ),
       label: 'Discover',
       backgroundColor: Colors.transparent,
     ),
-    new BottomNavigationBarItem(
+    BottomNavigationBarItem(
       icon: Icon(
         Icons.person_rounded,
         color: Colors.black26,
@@ -135,6 +138,15 @@ class _ApplicationPageState extends State<ApplicationPage>
   @override
   void initState() {
     super.initState();
+    SignLogic.to.getCurrentUserId();
+    auth.authStateChanges().listen((User? user) {
+      if (user == null) {
+        print('Guard: User is currently signed out!');
+      } else {
+        SignLogic.to.getUserInfo(SignLogic.to.userId.value);
+        print('Guard: User is signed in!');
+      }
+    });
     // isFreshInstalled().then((value) {
     //   if (value) {
     //     context.pushRoute(IntroductionPage());
@@ -189,19 +201,9 @@ class _ApplicationPageState extends State<ApplicationPage>
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider<NewsModel>(
-          create: (context) => NewsModel()
-            ..fetchMultipleNews()
-            ..fetchNewsNow(),
-        ),
-      ],
-      child: Scaffold(
-
-        body: _buildPageView(),
-        bottomNavigationBar: _buildBottomNavigationBar(),
-      ),
+    return Scaffold(
+      body: _buildPageView(),
+      bottomNavigationBar: _buildBottomNavigationBar(),
     );
   }
 }

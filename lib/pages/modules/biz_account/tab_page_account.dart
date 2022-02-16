@@ -3,9 +3,11 @@ import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_web_browser/flutter_web_browser.dart';
+import 'package:get/get.dart';
 import 'package:nu_mobile/router/router.gr.dart';
+import 'package:nu_mobile/store/sign_logic.dart';
 import 'package:nu_mobile/utils/colors.dart';
 import 'package:nu_mobile/utils/icons.dart';
 import 'package:thindek_ui/thindek_ui.dart';
@@ -28,25 +30,7 @@ class TabPageAccount extends StatefulWidget {
 class _TabPageAccountState extends State<TabPageAccount> {
   final EasyRefreshController _controller = EasyRefreshController();
 
-  openBrowserTab() async {
-    await FlutterWebBrowser.openWebPage(
-      url: "https://caesar.ent.northwestern.edu/",
-    );
-  }
-
-  _launchURL() async {
-    const url = 'https://caesar.ent.northwestern.edu/';
-    if (await canLaunch(url)) {
-      await launch(
-        url,
-        forceSafariVC: true,
-        forceWebView: true,
-        enableJavaScript: true,
-      );
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+  final ChromeSafariBrowser browser = ChromeSafariBrowser();
 
   @override
   Widget build(BuildContext context) {
@@ -55,111 +39,227 @@ class _TabPageAccountState extends State<TabPageAccount> {
         child: GestureDetector(
           child: ListView(
             children: [
-              // Container(
-              //   padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-              //   margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-              //   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10))),
-              //   child: Container(
-              //     child: Stack(
-              //       children: [
-              //         Column(
-              //           children: [
-              //             SizedBox(
-              //               height: 15.sp,
-              //             ),
-              //             Row(
-              //               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //               children: [
-              //                 Row(
-              //                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-              //                   children: [
-              //                     Container(
-              //                       width: 35.sp * 4,
-              //                     ),
-              //                     Container(
-              //                       child: Column(
-              //                         children: [
-              //                           GestureDetector(
-              //                             onTap: () {
-              //                               // isLogged ? context.pushRoute(PageHomepageMe()) : context.pushRoute(PageLogin());
-              //                             },
-              //                             child: Row(
-              //                               children: [
-              //                                 Icon(
-              //                                   Icons.person,
-              //                                   size: 30.sp,
-              //                                   color: Colors.black54,
-              //                                 ),
-              //                                 Text(
-              //                                   'Mobile ID (Coming Soon)',
-              //                                   textAlign: TextAlign.left,
-              //                                   style: TextStyle(fontWeight: FontWeight.w500, fontSize: 30.sp),
-              //                                 ),
-              //                               ],
-              //                             ),
-              //                           ),
-              //                         ],
-              //                       ),
-              //                     ),
-              //                   ],
-              //                 ),
-              //               ],
-              //             ),
-              //             SizedBox(
-              //               height: 30.sp * 2,
-              //             ),
-              //           ],
-              //         ),
-              //         FractionalTranslation(
-              //           translation: Offset(0, -0.2),
-              //           child: Container(
-              //             child: GestureDetector(
-              //                 onTap: () {
-              //                   // isLogged ? context.pushRoute(PageHomepageMe()) : context.pushRoute(PageLogin());
-              //                 },
-              //                 child: CircleAvatar(
-              //                   backgroundColor: NUColors.Purple80,
-              //                   backgroundImage: AssetImage('assets/images/logo_n.png'),
-              //                   maxRadius: 45.sp,
-              //                 )),
-              //           ),
-              //         ),
-              //       ],
-              //     ),
-              //   ),
-              // ),
-              // SizedBox(
-              //   height: 15.sp * 2,
-              // ),
-              // Container(
-              //   margin:
-              //       EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO, vertical: 15.sp),
-              //   height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
-              //   child: Stack(
-              //     children: [
-              //       Container(
-              //         height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
-              //         decoration: BoxDecoration(
-              //           borderRadius: TDKRadii.r10,
-              //           color: Colors.white,
-              //           image: DecorationImage(
-              //             fit: BoxFit.cover,
-              //             image: AssetImage(
-              //               'assets/images/purple-polygons.png',
-              //             ),
-              //           ),
-              //         ),
-              //       ),
-              //       Container(
-              //         height: MediaQuery.of(context).size.width * (1 - 2 * MARGIN_RATIO) * 0.4,
-              //         decoration: BoxDecoration(
-              //           borderRadius: TDKRadii.r10,
-              //           color: Color(0xbc4e2a84),
-              //         ),
-              //       ),
-              //     ],
-              //   ),
-              // ),
+              SizedBox(
+                height: 15.sp * 2,
+              ),
+              Obx(() {
+                return SignLogic.to.isSigned.value
+                    ? Container(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: MediaQuery.of(context).size.width *
+                                MARGIN_RATIO),
+                        margin: EdgeInsets.symmetric(
+                            horizontal: MediaQuery.of(context).size.width *
+                                MARGIN_RATIO),
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(10))),
+                        child: Container(
+                          child: Stack(
+                            children: [
+                              Column(
+                                children: [
+                                  SizedBox(
+                                    height: 15.sp,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceAround,
+                                        children: [
+                                          Container(
+                                            width: 35.sp * 4,
+                                          ),
+                                          Container(
+                                            child: Column(
+                                              children: [
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    // isLogged ? context.pushRoute(PageHomepageMe()) : context.pushRoute(PageLogin());
+                                                  },
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(
+                                                        Icons.person,
+                                                        size: 30.sp,
+                                                        color: Colors.black54,
+                                                      ),
+                                                      Text(
+                                                        SignLogic
+                                                            .to.userInfo['name']
+                                                            .toString(),
+                                                        textAlign:
+                                                            TextAlign.left,
+                                                        style: TextStyle(
+                                                            fontWeight:
+                                                                FontWeight.w500,
+                                                            fontSize: 30.sp),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 30.sp * 2,
+                                  ),
+                                ],
+                              ),
+                              FractionalTranslation(
+                                translation: Offset(0, -0.2),
+                                child: Container(
+                                  child: GestureDetector(
+                                      onTap: () {
+                                        // isLogged ? context.pushRoute(PageHomepageMe()) : context.pushRoute(PageLogin());
+                                      },
+                                      child: CircleAvatar(
+                                        backgroundColor: NUColors.Purple80,
+                                        backgroundImage: AssetImage(
+                                            'assets/images/logo_n.png'),
+                                        maxRadius: 45.sp,
+                                      )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    : Container();
+              }),
+
+//               SignLogic.to.isSigned.value
+//                   ? GestureDetector(
+//                       onTap: () async {
+// // Present the dialog to the user
+// //                   final result = await FlutterWebAuth.authenticate(
+// //                       url:
+// //                           "https://prd-nusso.it.northwestern.edu/nusso/XUI/?realm=%2Fnorthwestern&goto=https%3A%2F%2Fprd-nusso.it.northwestern.edu%3A443%2Fnusso%2Foauth2%2Fauthorize%3Fresponse_mode%3Dform_post%26state%3Dee0765bd-ce96-509f-b9ed-651a5045f29a%26redirect_uri%3Dhttps%253A%252F%252Fwww.it.northwestern.edu%253A443%252Fagent%252Fcdsso-oauth2%26response_type%3Did_token%26scope%3Dopenid%26client_id%3Dnuit-nuinfo%26agent_provider%3Dtrue%26agent_realm%3D%252Fnorthwestern%26nonce%3D2DE32711851B742D27CD557050722881#login/",
+// //                       callbackUrlScheme:
+// //                           "https://caesar.ent.northwestern.edu/");
+// //
+// // // Extract token from resulting url
+// //                   final token = Uri.parse(result).queryParameters['token'];
+// //                   print(token.toString());
+//                       },
+//                       child: Container(
+//                         margin: EdgeInsets.symmetric(
+//                             horizontal: MediaQuery.of(context).size.width *
+//                                 MARGIN_RATIO,
+//                             vertical: 15.sp),
+//                         height: MediaQuery.of(context).size.width *
+//                             (1 - 2 * MARGIN_RATIO) *
+//                             0.4,
+//                         child: Stack(
+//                           children: [
+//                             Container(
+//                               height: MediaQuery.of(context).size.width *
+//                                   (1 - 2 * MARGIN_RATIO) *
+//                                   0.4,
+//                               decoration: BoxDecoration(
+//                                 borderRadius: TDKRadii.r10,
+//                                 color: Colors.white,
+//                                 image: DecorationImage(
+//                                   fit: BoxFit.cover,
+//                                   image: AssetImage(
+//                                     'assets/images/purple-polygons.png',
+//                                   ),
+//                                 ),
+//                               ),
+//                             ),
+//                             Column(
+//                               children: [
+//                                 Container(
+//                                   margin: EdgeInsets.symmetric(
+//                                       horizontal:
+//                                           MediaQuery.of(context).size.width *
+//                                               MARGIN_RATIO,
+//                                       vertical: 20.sp),
+//                                   child: GestureDetector(
+//                                     onTap: () {
+//                                       // isLogged ? context.pushRoute(PageHomepageMe()) : context.pushRoute(PageLogin());
+//                                     },
+//                                     child: Row(
+//                                       children: [
+//                                         Icon(
+//                                           Icons.person,
+//                                           size: 30.sp,
+//                                           color: Colors.white,
+//                                         ),
+//                                         Container(
+//                                           padding: EdgeInsets.symmetric(
+//                                               horizontal: 10.sp),
+//                                           child: Text(
+//                                             SignLogic.to.userInfo['name'],
+//                                             textAlign: TextAlign.left,
+//                                             style: TextStyle(
+//                                                 fontWeight: FontWeight.w500,
+//                                                 fontSize: 30.sp,
+//                                                 color: Colors.white),
+//                                           ),
+//                                         ),
+//                                       ],
+//                                     ),
+//                                   ),
+//                                 ),
+//                                 Container(
+//                                   margin: EdgeInsets.symmetric(
+//                                       horizontal:
+//                                           MediaQuery.of(context).size.width *
+//                                               MARGIN_RATIO,
+//                                       vertical: 20.sp),
+//                                   child: GestureDetector(
+//                                     onTap: () {
+//                                       // isLogged ? context.pushRoute(PageHomepageMe()) : context.pushRoute(PageLogin());
+//                                     },
+//                                     child: Row(
+//                                       children: [
+//                                         Icon(
+//                                           CommunityMaterialIcons.medal,
+//                                           size: 30.sp,
+//                                           color: Colors.white,
+//                                         ),
+//                                         Container(
+//                                           padding: EdgeInsets.symmetric(
+//                                               horizontal: 10.sp),
+//                                           child: Text(
+//                                             'kudos: 99',
+//                                             textAlign: TextAlign.left,
+//                                             style: TextStyle(
+//                                                 fontWeight: FontWeight.w500,
+//                                                 fontSize: 30.sp,
+//                                                 color: Colors.white),
+//                                           ),
+//                                         ),
+//                                       ],
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ],
+//                             ),
+//
+//                             // Container(
+//                             //   height: MediaQuery.of(context).size.width *
+//                             //       (1 - 2 * MARGIN_RATIO) *
+//                             //       0.4,
+//                             //   decoration: BoxDecoration(
+//                             //     borderRadius: TDKRadii.r10,
+//                             //     color: Color(0xbc4e2a84),
+//                             //   ),
+//                             // ),
+//                           ],
+//                         ),
+//                       ),
+//                     )
+//                   : Container(),
               SizedBox(
                 height: 15.sp * 2,
               ),
@@ -187,13 +287,15 @@ class _TabPageAccountState extends State<TabPageAccount> {
                     // ),
                     menuList(
                       'CAESAR (NetID)',
-                      () {
-                        openBrowserTab();
-                        // _launchURL();
-                        // context.pushRoute(
-                        //   PageWebBrowse(
-                        //       url: "https://caesar.ent.northwestern.edu/"),
-                        // );
+                      () async {
+                        await browser.open(
+                            url: Uri.parse(
+                                "https://caesar.ent.northwestern.edu/"),
+                            options: ChromeSafariBrowserClassOptions(
+                                android: AndroidChromeCustomTabsOptions(
+                                    addDefaultShareMenuItem: false),
+                                ios: IOSSafariOptions(
+                                    barCollapsingEnabled: true)));
                       },
                       Icons.assignment_rounded,
                     ),
@@ -225,11 +327,15 @@ class _TabPageAccountState extends State<TabPageAccount> {
                     ),
                     menuList(
                       'Printing',
-                      () {
-                        context.pushRoute(
-                          PageWebBrowse(
-                              url: "https://nuprint.northwestern.edu/mr"),
-                        );
+                      () async {
+                        await browser.open(
+                            url: Uri.parse(
+                                "https://nuprint.northwestern.edu/mr"),
+                            options: ChromeSafariBrowserClassOptions(
+                                android: AndroidChromeCustomTabsOptions(
+                                    addDefaultShareMenuItem: false),
+                                ios: IOSSafariOptions(
+                                    barCollapsingEnabled: true)));
                       },
                       Icons.print_rounded,
                     ),
