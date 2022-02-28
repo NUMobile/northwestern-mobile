@@ -73,8 +73,10 @@ class _PageRecreationState extends State<PageRecreation> {
               ),
             ),
             Container(
-                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-                    child: Divider()),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO),
+                child: Divider()),
             ListTile(
               leading: Icon(
                 CommunityMaterialIcons.swim,
@@ -103,8 +105,10 @@ class _PageRecreationState extends State<PageRecreation> {
               ),
             ),
             Container(
-                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-                    child: Divider()),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO),
+                child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.accessibility_new_rounded,
@@ -133,8 +137,10 @@ class _PageRecreationState extends State<PageRecreation> {
               ),
             ),
             Container(
-                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-                    child: Divider()),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO),
+                child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.sports_football_rounded,
@@ -163,8 +169,10 @@ class _PageRecreationState extends State<PageRecreation> {
               ),
             ),
             Container(
-                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-                    child: Divider()),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO),
+                child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.sports_handball,
@@ -194,8 +202,10 @@ class _PageRecreationState extends State<PageRecreation> {
               ),
             ),
             Container(
-                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-                    child: Divider()),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO),
+                child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.sports_kabaddi_rounded,
@@ -224,8 +234,10 @@ class _PageRecreationState extends State<PageRecreation> {
               ),
             ),
             Container(
-                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-                    child: Divider()),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO),
+                child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.sailing_rounded,
@@ -254,8 +266,10 @@ class _PageRecreationState extends State<PageRecreation> {
               ),
             ),
             Container(
-                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-                    child: Divider()),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO),
+                child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.beach_access_rounded,
@@ -284,8 +298,10 @@ class _PageRecreationState extends State<PageRecreation> {
               ),
             ),
             Container(
-                    margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * MARGIN_RATIO),
-                    child: Divider()),
+                margin: EdgeInsets.symmetric(
+                    horizontal:
+                        MediaQuery.of(context).size.width * MARGIN_RATIO),
+                child: Divider()),
             ListTile(
               leading: Icon(
                 Icons.work_rounded,
