@@ -49,6 +49,7 @@ class PulseLogic extends GetxController {
           'uid': uid,
           'category': category,
           'content': content,
+          'likes': FieldValue.arrayUnion([uid]),
           'time': time,
           'blocked': blocked
         })
