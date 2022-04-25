@@ -11,7 +11,6 @@ class NewsLogic extends GetxController {
   void onInit() {
     super.onInit();
     fetchNewsNow();
-    print(rssItemListNow.toString());
   }
 
   final rssItemListNow = List.filled(0, RssItem()).obs;

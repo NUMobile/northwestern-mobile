@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
         designSize: Size(828, 1792),
-        builder: () => GetMaterialApp.router(
+        builder: (context) => GetMaterialApp.router(
               builder: EasyLoading.init(
                 builder: FlutterSmartDialog.init(),
               ),
