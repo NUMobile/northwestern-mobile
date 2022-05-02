@@ -22,6 +22,18 @@ class SignLogic extends GetxController {
   Future<void> signUp(String email, String password) async {
     try {
       if (isEmail(email)) {
+        if (!auth.currentUser!.emailVerified) {
+          var actionCodeSettings = ActionCodeSettings(
+            url: 'https://www.example.com/?email=$email',
+            dynamicLinkDomain: 'example.page.link',
+            androidPackageName: 'com.example.android',
+            androidInstallApp: true,
+            androidMinimumVersion: '12',
+            iOSBundleId: 'com.kening.nplus.ios',
+            handleCodeInApp: true,
+          );
+          await auth.currentUser!.sendEmailVerification(actionCodeSettings);
+        }
         UserCredential userCredential = await auth
             .createUserWithEmailAndPassword(email: email, password: password);
         userId.value = userCredential.user!.uid;
